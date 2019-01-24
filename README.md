@@ -1,5 +1,5 @@
 
-# EasyCloudBooks Help Secttion, Issues Tracking
+# EasyCloudBooks Help Section, Issues Tracking
 
 
 * Complete Help section for [EasyCloudBooks](https://www.easycloudbooks.com).
