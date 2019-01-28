@@ -24,32 +24,21 @@
     <!-- </div> -->
   <!-- </div> -->
 <!-- </nav> -->
-<script type="text/javascript">
-
- console.log('{{ site.pages  }}');
-{%- assign page_paths = site.header_pages -%}
-{%- for path in page_paths -%}
-           {%- assign my_page = site.pages | where: "path", path | first -%} 
-           {%- if my_page.title -%} 
-          console.log('{{ my_page.url | relative_url }} - {{ my_page.title | escape }}');
-           {%- endif -%} 
-         {% endfor -%}
-</script>
 <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
-  <a class="navbar-brand mr-0 mr-md-2" href="{{ "/" | relative_url }}" aria-label="{{ site.title | escape }}">
+  <a class="navbar-brand mr-0 mr-md-2" href="{{ "/" | absolute_url }}" aria-label="{{ site.title | escape }}">
   <img class="d-block" xmlns="http://www.w3.org/2000/svg" focusable="false" src="https://www.easycloudbooks.com/images/ecb170wc.png" width="67" height="36">
 </a>
 
   <div class="navbar-nav-scroll">
     <ul class="navbar-nav bd-navbar-nav flex-row">
       <li class="nav-item">
-        <a class="nav-link " href="{{ relative_url }}" >Home</a>
+        <a class="nav-link " href="{{ "/Home" | absolute_url }}" >Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="{{ "/User/" | relative_url }}" >User Section</a>
+        <a class="nav-link active" href="{{ "/User/" | absolute_url }}" >User Section</a>
       </li>
      <li class="nav-item">
-        <a class="nav-link active" href="{{ "/Client/" | relative_url }}" >Client Section</a>
+        <a class="nav-link active" href="{{ "/Client/" | absolute_url }}" >Client Section</a>
       </li>
     </ul>
   </div>
