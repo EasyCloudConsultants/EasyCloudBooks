@@ -1,29 +1,4 @@
-<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
-  <!-- <div class="container"> -->
-    <!-- <a class="navbar-brand" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a> -->
 
-    <!-- {%- assign page_paths = site.header_pages -%} -->
-    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" -->
-      <!-- aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
-      <!-- <span class="navbar-toggler-icon"></span> -->
-    <!-- </button> -->
-    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
-      <!-- <ul class="navbar-nav ml-auto"> -->
-        <!-- {%- for path in page_paths -%} -->
-          <!-- {%- assign my_page = site.pages | where: "path", path | first -%} -->
-          <!-- {%- if my_page.title -%} -->
-          <!-- <li class="nav-item"> -->
-            <!-- <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a> -->
-          <!-- </li> -->
-          <!-- {%- endif -%} -->
-        <!-- {% endfor -%} -->
-        <!-- <li class="nav-item"> -->
-          <!-- <a class="nav-link" href="https://www.easycloudbooks.com">EasyCloudBooks</a> -->
-        <!-- </li> -->
-      <!-- </ul> -->
-    <!-- </div> -->
-  <!-- </div> -->
-<!-- </nav> -->
 <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
   <a class="navbar-brand mr-0 mr-md-2" href="{{ "/" | absolute_url }}" aria-label="{{ site.title | escape }}">
   <img class="d-block" xmlns="http://www.w3.org/2000/svg" focusable="false" src="https://www.easycloudbooks.com/images/ecb170wc.png" width="67" height="36">
@@ -35,10 +10,10 @@
         <a class="nav-link " href="{{ "/Home" | absolute_url }}" >Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="{{ "/User/" | absolute_url }}" >User Section</a>
+        <a class="nav-link " href="{{ "/User/" | absolute_url }}" >User Section</a>
       </li>
      <li class="nav-item">
-        <a class="nav-link" href="{{ "/Client/" | absolute_url }}" >Client Section</a>
+        <a class="nav-link active" href="{{ "/Client/" | absolute_url }}" >Client Section</a>
       </li>
     </ul>
   </div>
@@ -60,7 +35,10 @@
     <li class="nav-item">
       <a class="nav-link p-2" href="https://twitter.com/EasyCloudBooks" target="_blank" rel="noopener" aria-label="Twitter"><svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 416.32" focusable="false"><title>Twitter</title><path d="M160.83 416.32c193.2 0 298.92-160.22 298.92-298.92 0-4.51 0-9-.2-13.52A214 214 0 0 0 512 49.38a212.93 212.93 0 0 1-60.44 16.6 105.7 105.7 0 0 0 46.3-58.19 209 209 0 0 1-66.79 25.37 105.09 105.09 0 0 0-181.73 71.91 116.12 116.12 0 0 0 2.66 24c-87.28-4.3-164.73-46.3-216.56-109.82A105.48 105.48 0 0 0 68 159.6a106.27 106.27 0 0 1-47.53-13.11v1.43a105.28 105.28 0 0 0 84.21 103.06 105.67 105.67 0 0 1-47.33 1.84 105.06 105.06 0 0 0 98.14 72.94A210.72 210.72 0 0 1 25 370.84a202.17 202.17 0 0 1-25-1.43 298.85 298.85 0 0 0 160.83 46.92" fill="currentColor"></path></svg>
 </a>
-    </li>
+</li>
+ <li class="nav-item">
+      <a class="nav-link p-2" href="https://facebook.com/EasyCloudBooks" target="_blank" rel="noopener" aria-label="Facebook"><svg class="navbar-nav-svg" src="{{ "/assets/facebook-icon-logo-svg-vector.svg" | absolute_url }}" ></svg>
+</a>
     </li>
   </ul>
 
