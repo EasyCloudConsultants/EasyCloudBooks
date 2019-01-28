@@ -2,14 +2,7 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {%- include head.html -%}
-
-  <body>
 <style type="text/css">
-// stylelint-disable declaration-no-important
-
-//
-// Right side table of contents
-//
 
 .bd-toc {
   @supports (position: sticky) {
@@ -173,9 +166,10 @@
 }
 
 </style>
-    {%- include header.html -%}
+  <body>
 
-    <div class="py-5">
+
+   
       
       <div class="container-fluid page-content">
 
@@ -227,10 +221,7 @@
 </li>
 </ul>
           </div>
-          <!-- <div class="d-none d-xl-block col-xl-2 bd-toc"> -->
-            <!-- {%- include menu.html -%} -->
          
-          <!-- </div> -->
         
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
@@ -240,8 +231,6 @@
     
           </div>
      
- </div>
-    {%- include footer.html -%}
 
   </body>
 
