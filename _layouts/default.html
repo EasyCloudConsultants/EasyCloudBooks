@@ -4,21 +4,233 @@
   {%- include head.html -%}
 
   <body>
+<style type="text/css">
+// stylelint-disable declaration-no-important
 
+//
+// Right side table of contents
+//
+
+.bd-toc {
+  @supports (position: sticky) {
+    position: sticky;
+    top: 4rem;
+    height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  order: 2;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: .875rem;
+}
+
+.section-nav {
+  padding-left: 0;
+  border-left: 1px solid #eee;
+
+  ul {
+    padding-left: 1rem;
+
+    ul {
+      display: none;
+    }
+  }
+}
+
+.toc-entry {
+  display: block;
+
+  a {
+    display: block;
+    padding: .125rem 1.5rem;
+    color: #99979c;
+
+    &:hover {
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+}
+
+//
+// Left side navigation
+//
+
+.bd-sidebar {
+  order: 0;
+  // background-color: #f5f2f9;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+  @include media-breakpoint-up(md) {
+    @supports (position: sticky) {
+      position: sticky;
+      top: 4rem;
+      z-index: 1000;
+      height: calc(100vh - 4rem);
+    }
+    border-right: 1px solid rgba(0, 0, 0, .1);
+  }
+
+  @include media-breakpoint-up(xl) {
+    flex: 0 1 320px;
+  }
+}
+
+.bd-links {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-right: -15px;
+  margin-left: -15px;
+
+  @include media-breakpoint-up(md) {
+    @supports (position: sticky) {
+      max-height: calc(100vh - 9rem);
+      overflow-y: auto;
+    }
+  }
+
+  // Override collapse behaviors
+  @include media-breakpoint-up(md) {
+    display: block !important;
+  }
+}
+
+.bd-search {
+  position: relative; // To contain the Algolia search
+  padding: 1rem 15px;
+  margin-right: -15px;
+  margin-left: -15px;
+  border-bottom: 1px solid rgba(0, 0, 0, .05);
+
+  .form-control:focus {
+    border-color: $bd-purple-bright;
+    box-shadow: 0 0 0 3px rgba($bd-purple-bright, .25);
+  }
+}
+
+.bd-search-docs-toggle {
+  line-height: 1;
+  color: $gray-900;
+}
+
+.bd-sidenav {
+  display: none;
+}
+
+.bd-toc-link {
+  display: block;
+  padding: .25rem 1.5rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, .65);
+
+  &:hover {
+    color: rgba(0, 0, 0, .85);
+    text-decoration: none;
+  }
+}
+
+.bd-toc-item {
+  &.active {
+    margin-bottom: 1rem;
+
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+
+    > .bd-toc-link {
+      color: rgba(0, 0, 0, .85);
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    > .bd-sidenav {
+      display: block;
+    }
+  }
+}
+
+// All levels of nav
+.bd-sidebar .nav > li > a {
+  display: block;
+  padding: .25rem 1.5rem;
+  font-size: 90%;
+  color: rgba(0, 0, 0, .65);
+}
+
+.bd-sidebar .nav > li > a:hover {
+  color: rgba(0, 0, 0, .85);
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.bd-sidebar .nav > .active > a,
+.bd-sidebar .nav > .active:hover > a {
+  font-weight: 500;
+  color: rgba(0, 0, 0, .85);
+  background-color: transparent;
+}
+
+</style>
     {%- include header.html -%}
 
-    <div class="py-5 row">
+    <div class="py-5">
       
       <div class="container-fluid page-content">
 
       <div class="row flex-xl-nowrap">
         
 
-        
-          <div class="d-none d-xl-block col-xl-2 bd-toc">
-            {%- include menu.html -%}
-         
+        <div class="d-none d-xl-block col-xl-2 bd-toc">
+            <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#about">About</a></li>
+<li class="toc-entry toc-h2"><a href="#example">Example</a></li>
+<li class="toc-entry toc-h2"><a href="#content-types">Content types</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#body">Body</a></li>
+<li class="toc-entry toc-h3"><a href="#titles-text-and-links">Titles, text, and links</a></li>
+<li class="toc-entry toc-h3"><a href="#images">Images</a></li>
+<li class="toc-entry toc-h3"><a href="#list-groups">List groups</a></li>
+<li class="toc-entry toc-h3"><a href="#kitchen-sink">Kitchen sink</a></li>
+<li class="toc-entry toc-h3"><a href="#header-and-footer">Header and footer</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#sizing">Sizing</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#using-grid-markup">Using grid markup</a></li>
+<li class="toc-entry toc-h3"><a href="#using-utilities">Using utilities</a></li>
+<li class="toc-entry toc-h3"><a href="#using-custom-css">Using custom CSS</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#text-alignment">Text alignment</a></li>
+<li class="toc-entry toc-h2"><a href="#navigation">Navigation</a></li>
+<li class="toc-entry toc-h2"><a href="#images-1">Images</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#image-caps">Image caps</a></li>
+<li class="toc-entry toc-h3"><a href="#image-overlays">Image overlays</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#card-styles">Card styles</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#background-and-color">Background and color</a></li>
+<li class="toc-entry toc-h3"><a href="#border">Border</a></li>
+<li class="toc-entry toc-h3"><a href="#mixins-utilities">Mixins utilities</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#card-layout">Card layout</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#card-groups">Card groups</a></li>
+<li class="toc-entry toc-h3"><a href="#card-decks">Card decks</a></li>
+<li class="toc-entry toc-h3"><a href="#card-columns">Card columns</a></li>
+</ul>
+</li>
+</ul>
           </div>
+          <!-- <div class="d-none d-xl-block col-xl-2 bd-toc"> -->
+            <!-- {%- include menu.html -%} -->
+         
+          <!-- </div> -->
         
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
