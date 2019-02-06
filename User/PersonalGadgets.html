@@ -1,0 +1,104 @@
+---
+layout: default
+---
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="Home">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Personal Gadgets</li>
+    </ol>
+</nav>
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="card mb-2">
+                <div class="card-header bg-transparent border-success"><h1 class="display-4">Contacts</h1></div>
+                <iframe class="card-img-top" src="https://www.youtube.com/embed/aDW9GvYh0Bo" allowfullscreen="" frameborder="0" style=" min-height: 300px;"></iframe>
+                <div class="card-body">
+                    <p class="card-text">Personal Gadgets is used to track important metrics for quick reference and control purpose. You can create gadgets by creating queries through queries builder module and then applying that query in creating gadget.</p>
+                </div>
+            </div>
+            <div class="card mb-2">
+                <div class="card-header" id="faq1h">
+                    <h5 class="mb-0">
+                        <a data-toggle="collapse" href="#faq1" class="faq-question">How to Create 'Cash &amp; Bank Balance' Personal Gadget ?</a>
+                    </h5>
+                </div>
+                <div id="faq1" class="collapse" aria-labelledby="faq1" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a class="fancybox-buttons" href="faqimages/querybuilder/cash and bank balance query.png" title="Query Builder Page">
+                                    <img class="img-responsive imgmargin" src="faqimages/querybuilder/thumb/cash and bank balance query.png" alt="Query Builder Page">
+                                </a>
+                            </div>
+                            <div class="col-lg-6">
+                                <p>
+                                    <strong>Step 1:</strong>
+                                    For achieve this at first you need to create related query by following below steps<br>
+                                    - Goto query builder page<br>
+                                    - Click on create new button on query builder page.<br>
+                                    - Type proper name of query like Cash and Bank Balance so that we can use it for filter in future.<br>
+                                    - In builder section choose parameter “Account : type equal Bank Accounts”,
+                                    <br>
+                                    click +add rule and choose “Account : type equal Cash in hands”,
+                                    <br>
+                                    click +add rule and choose “Account : type equal Bank OD Accounts”, select OR operator between them.<br>
+                                    - You can create personal or shared type query.<br>
+                                    - Save this query for future use.
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a class="fancybox-buttons" href="faqimages/gadgets/cash and bank balance.png" title="Gadgets">
+                                    <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/cash and bank balance.png">
+                                </a>
+                            </div>
+                            <div class="col-lg-6">
+                                <p>
+                                    <strong>Step 2:</strong>
+                                    - Now goto personal gadgets page and click on + Gadgets button for creating new gadget.<br>
+                                    - Write proper name of gadget like Cash and Bank Balance.<br>
+                                    - Create new group or select existing group (if you create one before) from drop down.<br>
+                                    - Click on +button for adding scheduler or type initials for select saved scheduler from drop down.<br>
+                                    - Select type of objects from the dropdown in parameter section. In our case we select ‘Account’ .<br>
+                                    - Select type of sub object from the dropdown in parameter section. In our case we select ‘Total Balance’ .<br>
+                                    - Select type of value from the dropdown. In our case we select ‘Total’ .<br>
+                                    - Select query builder search in builder section, then select equal then type initials for selecting saved query from the dropdown. In our case we select Cash and Bank Balance query.<br>
+                                    - On Is reverse switch if this gadget's value getting low means good.<br>
+                                    - Write unit of result.<br>
+                                    - Finally click on save changes button.
+
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a class="fancybox-buttons" href="faqimages/gadgets/cash and bank balance gadget.png" title="Gadgets">
+                                    <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/cash and bank balance gadget.png">
+                                </a>
+                            </div>
+                            <div class="col-lg-6">
+                                <p>
+                                    - Now you can see Cash and Bank Balance gadget on screen.<br>
+                                    - There are many buttons on this gadgets, like view results,copy gadgets,edit gadgets, refresh now and delete gadget.<br>
+                                    - You can change group name by click on edit group button.<br>
+                                    - Click on view result button for view final result of query.<br>
+                                    - It is redirected to pages according to query.<br>
+                                    - All Gadgets which are created previously shown here on personal gadgets page.
+
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
