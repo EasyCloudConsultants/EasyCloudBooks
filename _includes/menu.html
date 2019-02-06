@@ -1,16 +1,95 @@
 <div class="d-none d-xl-block col-xl-2 bd-toc">
     <ul class="section-nav">
+        <li class="toc-entry toc-h2"><a href="{{ "/User/Setup" | absolute_url }}">Setup Easycloudbooks</a></li>
         <li class="toc-entry toc-h2">
-            <a href="{{ "/User/Contact" | absolute_url }}">Contacts</a>
+            <a href="{{ "/User/dashboard-home" | absolute_url }}">Dashboard</a>
             <ul>
-                <li class="toc-entry toc-h3"><a href="{{ "/User/Contact" | absolute_url }}">Contact</a></li>
-                <li class="toc-entry toc-h3"><a href="#">Client Login</a></li>
-                <li class="toc-entry toc-h3"><a href="#">Client Carts</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/User/dashboard-home" | absolute_url }}">Home</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/User/personalgadgets" | absolute_url }}">Personal Gadgets</a></li>
+            </ul>
+        </li>
+        <li class="toc-entry toc-h2">
+            <a href="{{ "/User/contact" | absolute_url }}">Contacts</a>
+            <ul>
+                <li class="toc-entry toc-h3"><a href="{{ "/User/contact" | absolute_url }}">Contacts</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/User/clientlogin" | absolute_url }}">ClientLogin</a></li>
+                <li class="toc-entry toc-h2"><a href="{{ "/Client/Cart" | absolute_url }}">Client Cart</a></li>
+
             </ul>
         </li>
         <li class="toc-entry toc-h2"><a href="{{ "/User/Company" | absolute_url }}">Company</a></li>
-        <li class="toc-entry toc-h2"><a href="{{ "/User/Projects" | absolute_url }}">Projects</a></li>
-        <li class="toc-entry toc-h2"><a href="{{ "/User/Documents" | absolute_url }}">Documents</a></li>
-        <li class="toc-entry toc-h2"><a href="{{ "/Client/Cart" | absolute_url }}">Client Cart</a></li>
+        <li class="toc-entry toc-h2">
+            <a href="{{ "/User/Projects" | absolute_url }}">Projects</a>
+            <ul>
+                <li class="toc-entry toc-h3"><a href="{{ "/User/Projects" | absolute_url }}">Projects</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/User/reviewprojects" | absolute_url }}">Review Projects</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/User/finishedprojects" | absolute_url }}">Finished Projects</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/User/projectimport" | absolute_url }}">Project Import</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/User/servicescheduler" | absolute_url }}">Service Scheduler</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/User/accounts" | absolute_url }}">Accounts</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/User/paymentlog" | absolute_url }}">Payment Log</a></li>
+            </ul>
+        </li>
+
+        <li class="toc-entry toc-h2">
+            <a href="{{ "/User/document" | absolute_url }}">Documents</a>
+            <ul>
+                <li class="toc-entry toc-h3"><a href="{{ "/User/document" | absolute_url }}">Documents</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/User/documentlog" | absolute_url }}">Document Log</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/User/export" | absolute_url }}">Export</a></li>
+            </ul>
+        </li>
+
+
+        <li class="toc-entry toc-h2"><a href="{{ "/User/timeSheet" | absolute_url }}">TimeSheet</a></li>
+        <li class="toc-entry toc-h2"><a href="{{ "/User/inoutdocuments" | absolute_url }}">InOut Documents</a></li>
+        <li class="toc-entry toc-h2">
+            <a href="{{ "/User/query" | absolute_url }}">Query</a>
+            <ul>
+                <li class="toc-entry toc-h3"><a href="{{ "/User/document" | absolute_url }}">Query</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/User/querybuilder" | absolute_url }}">Query Builder</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/User/scheduler" | absolute_url }}">Scheduler</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/User/customfield" | absolute_url }}">Custom Field</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/User/accountstatementtax" | absolute_url }}">Tax Settings</a></li>
+            </ul>
+        </li>
+        <li class="toc-entry toc-h2">
+            <a href="{{ "/User/notifydashboard" | absolute_url }}">Email/SMS</a>
+            <ul>
+                <li class="toc-entry toc-h3"><a href="{{ "/notify/notifydashboard" | absolute_url }}">Notify Dashboard</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/notify/emaillog" | absolute_url }}">Email Log</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/notify/smslog" | absolute_url }}">SMS Log</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/notify/emailtemplate" | absolute_url }}">Email Templates</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/notify/createnotification" | absolute_url }}">Create Notification</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/notify/automation" | absolute_url }}">Automation</a></li>
+            </ul>
+        </li>
+        <li class="toc-entry toc-h2">
+            <a href="{{ "/User/notifydashboard" | absolute_url }}">Settings</a>
+            <ul>
+                <li class="toc-entry toc-h3"><a href="{{ "/User/staff" | absolute_url }}">Staff</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/notify/manageyear" | absolute_url }}">Year &amp; Periods</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/notify/services" | absolute_url }}">Services</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/notify/team" | absolute_url }}">Team</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/notify/settings" | absolute_url }}">Settings</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/notify/template" | absolute_url }}">Project Templates</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/notify/role" | absolute_url }}">Roles</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/notify/activepackages" | absolute_url }}">Active Packages</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/notify/package" | absolute_url }}">Buy Package</a></li>
+            </ul>
+        </li>
+        <li class="toc-entry toc-h2">
+            <a href="{{ "/User/notifydashboard" | absolute_url }}">Miscellaneous </a>
+            <ul>
+                <li class="toc-entry toc-h3"><a href="{{ "/User/staff" | absolute_url }}">Global Search</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/notify/manageyear" | absolute_url }}">User profile</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/notify/services" | absolute_url }}">Change Log</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/notify/team" | absolute_url }}">Notifications</a></li>
+                <li class="toc-entry toc-h3"><a href="{{ "/notify/settings" | absolute_url }}">SampleExcelFiles</a></li>
+            </ul>
+        </li>
+
+
+
     </ul>
 </div>
