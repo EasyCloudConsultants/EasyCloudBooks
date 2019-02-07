@@ -1,14 +1,12 @@
 ---
 layout: default
 ---
-
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="Home">Home</a></li>
         <li class="breadcrumb-item active" aria-current="page">Automation</li>
     </ol>
 </nav>
-
 <div class="row">
     <div class="col-lg-12">
         <div class="wrapper wrapper-content animated fadeInRight">
@@ -211,7 +209,7 @@ layout: default
                 <div class="card mb-2">
                     <div class="card-header" id="faq7h">
                         <h5 class="mb-0">
-                            <a data-toggle="collapse" href="#faq7" class="faq-question">What is the use of ‘Run Now’ button in Scheduler base Automation ?</a>
+                            <a data-toggle="collapse" href="#faq7" class="faq-question">What is the use of Â‘Run NowÂ’ button in Scheduler base Automation ?</a>
                         </h5>
                     </div>
                     <div id="faq7" class="collapse" aria-labelledby="faq7" data-parent="#accordion">
@@ -223,7 +221,7 @@ layout: default
                                     </a>
                                 </div>
                                 <div class="col-lg-6">
-                                    <p class="p-size">By using ‘Run Now’ button user can run Scheduler base Automation immediately.</p>
+                                    <p class="p-size">By using Â‘Run NowÂ’ button user can run Scheduler base Automation immediately.</p>
                                 </div>
                             </div>
                         </div>
@@ -250,12 +248,12 @@ layout: default
                                         For achieve this at first you need to create related query by following below steps -<br>
                                         - Goto query builder page<br>
                                         - Click on create new button on query builder page.<br>
-                                        - Type proper name of query like ‘Auto Billing of ITRs after Lead’ in our case so that we can use it for filter in future.<br>
+                                        - Type proper name of query like Â‘Auto Billing of ITRs after LeadÂ’ in our case so that we can use it for filter in future.<br>
                                         - In builder section click on +ADD RULE button,
                                         <br>
-                                        - then choose parameter “Project : Transaction Exists equal False” ,<br>
-                                        - click +add rule and choose “Service : Search equal Income Tax Return” ,<br>
-                                        - click +add rule and choose “Project : Status Greater Lead”<br>
+                                        - then choose parameter Â“Project : Transaction Exists equal FalseÂ” ,<br>
+                                        - click +add rule and choose Â“Service : Search equal Income Tax ReturnÂ” ,<br>
+                                        - click +add rule and choose Â“Project : Status Greater LeadÂ”<br>
                                         - select AND operator between them.<br>
                                         - You can create personal or shared type query<br>
                                         - Save this query for future use.<br>
@@ -277,10 +275,10 @@ layout: default
                                         - Write proper name of automation like Billing of ITR Service.<br>
                                         - Now go to Trigger section and select scheduler tab,<br>
                                         - Click on +button for adding scheduler or type initials for select saved scheduler from drop down.<br>
-                                        - Select ‘Applies To’ from drop down list, in our case we select Projects.<br>
-                                        - Now goto Custom filter section, then type initials for selecting saved query from the dropdown. In our case we select ‘Auto Billing of ITRs After Lead’ query.
-                                        - Now goto Action, click on +ADD ACTION, Select ‘Create Bill’ from action type dropdown.<br>
-                                        - Select appropriate Billing type from dropdown, in our case select ‘Per Project With Company Settings’<br>
+                                        - Select Â‘Applies ToÂ’ from drop down list, in our case we select Projects.<br>
+                                        - Now goto Custom filter section, then type initials for selecting saved query from the dropdown. In our case we select Â‘Auto Billing of ITRs After LeadÂ’ query.
+                                        - Now goto Action, click on +ADD ACTION, Select Â‘Create BillÂ’ from action type dropdown.<br>
+                                        - Select appropriate Billing type from dropdown, in our case select Â‘Per Project With Company SettingsÂ’<br>
                                         - In No Repeat Days section type 0 Days.
                                         <br>
                                         - Save this Automation.<br>
@@ -356,12 +354,12 @@ layout: default
                                     <p class="p-size">
                                         <strong>Step 2:</strong><br>
                                         Now goto Automation page and click on <b>+Create New</b> button for create new automation.<br>
-                                        - Write proper name of automation like <b>‘For assign projects to staff’</b>.<br>
+                                        - Write proper name of automation like <b>Â‘For assign projects to staffÂ’</b>.<br>
                                         - Now go to Trigger section and select Event tab.<br>
                                         - Type initials for select event from drop down name <b>ecb_ProjectCreated</b>.<br>
-                                        - Select ‘Applies To’ from drop down list, in our case we select <b>Project Member</b>.<br>
+                                        - Select Â‘Applies ToÂ’ from drop down list, in our case we select <b>Project Member</b>.<br>
                                         - Now goto Action, click on <b>+ADD ACTION</b>, Select <b>Email</b> from action type dropdown.<br>
-                                        - Choose ‘For staff assign projects’ email template which are made earlier.<br>
+                                        - Choose Â‘For staff assign projectsÂ’ email template which are made earlier.<br>
                                         - Save this Automation.<br>
                                         - Automation run automatically accordingly attached Event, in our case whenever project created email send to related staff members.
                                     </p>
