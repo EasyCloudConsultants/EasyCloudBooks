@@ -23,7 +23,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 #github_username:  jekyll
 
 repository: "EasyCloudConsultants/EasyCloudBooks"
-
+encoding: UTF-8
 # Build settings
 plugins:
   - jekyll-feed
