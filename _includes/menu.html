@@ -1,4 +1,29 @@
-<div class="d-none d-xl-block col-xl-2 bd-toc">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ "/User/Setup" | absolute_url }}">Setup Easycloudbooks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ "/User/Home" | absolute_url }}">Dashboard</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ "/User/Setup" | absolute_url }}">Home</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ "/User/PersonalGadgets" | absolute_url }}">Personal Gadgets</a>
+                    </li>
+                </ul>
+            </li>           
+        </ul>
+    </div>
+</nav>
+
+<!--<div class="d-none d-xl-block col-xl-2 bd-toc">
     <ul class="section-nav">
         <li class="toc-entry toc-h2"><a href="{{ "/User/Setup" | absolute_url }}">Setup Easycloudbooks</a></li>
         <li class="toc-entry toc-h2">
@@ -13,7 +38,6 @@
             <ul>
                 <li class="toc-entry toc-h3"><a href="{{ "/User/Contact" | absolute_url }}">Contacts</a></li>
                 <li class="toc-entry toc-h3"><a href="{{ "/User/ClientLogin" | absolute_url }}">ClientLogin</a></li>
-                <!--<li class="toc-entry toc-h2"><a href="{{ "/Client/Cart" | absolute_url }}">Client Cart</a></li>-->
 
             </ul>
         </li>
@@ -91,4 +115,4 @@
         </li>
 
     </ul>
-</div>
+</div>-->
