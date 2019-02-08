@@ -8,17 +8,23 @@ box-shadow: 0px 15px 10px -15px;
 .card-header:after {
     border-bottom: 2px solid rgba(0,0,0,0.125);
 }
-.navbarfull
-{
-  width:100% !important;
-}
+
+
 .bg-blue
 {
     background-color:#563d7c;
 }
 
+
 .toggler-right {
     position: absolute;
     top: 8px;
     right: 16px;
+}
+@media (min-width:748px) 
+{
+    .navbarfull {
+        width: 100% !important;
+    }
+
 }
