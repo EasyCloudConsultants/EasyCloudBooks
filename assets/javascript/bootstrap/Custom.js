@@ -1,11 +1,6 @@
-﻿
-var ul = document.getElementById("main");
-var btns = ul.getElementsByClassName("a");
-for (var i = 0; i < btns.length; i++) {
-    alert(i);
-  btns[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("action");
-      current[0].className = current[0].className.replace(" action", "");
-      this.className += " action";
-  });
-}
+﻿$(document).ready(function () {
+    $('ul li a.main').click(function () {
+        $('li a.main').removeClass("action");
+        $(this).addClass("action");
+    });
+});
