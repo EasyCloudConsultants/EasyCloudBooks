@@ -17,12 +17,17 @@ box-shadow: 0px 15px 10px -15px;
 
 //navbar style
 
-@media (min-width:748px) {
+@media (min-width:767px) {
 
     .nav-position {
         position: fixed;
-        top: 15px;
+        top: 71px;
         left: 16px;
+    }
+
+    .navbarfull {
+        width: 14%;
+        overflow-y: auto;
     }
 }
 
@@ -32,16 +37,12 @@ box-shadow: 0px 15px 10px -15px;
         right: 16px;
     }
 
-    @media (max-width:748px) And (min-width:100px) {
+    @media (max-width:767px) And (min-width:100px) {
         .navbarfull {
             width: 100% !important;
         }
     }
 
-    .navbarfull {
-        width: 14%;
-        overflow-y: auto;
-    }
 
     .linetonav {
         display: block;
