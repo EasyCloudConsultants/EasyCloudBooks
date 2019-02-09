@@ -2,44 +2,38 @@
  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
-  </div>
+</div>
   
-  
-  
+ 
 <nav class="navbar navbar-expand-md bg-dark navbar-dark navbarfull">
   
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav linetonav">
           <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="{{ "/User/Setup" | absolute_url }}">Setup Easycloudbooks</a>
           </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="active">
-              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+          <li>
+              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Dashboards</a>
               <ul class="collapse list-unstyled" id="homeSubmenu">
                   <li>
-                      <a href="#">Home 1</a>
+                      <a href="{{ "/User/Home" | absolute_url }}">Home</a>
                   </li>
                   <li>
-                      <a href="#">Home 2</a>
-                  </li>
-                  <li>
-                      <a href="#">Home 3</a>
+                      <a href="{{ "/User/PersonalGadgets" | absolute_url }}">Personal Gadgets</a>
                   </li>
               </ul>
           </li>
-          <!--<li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                  Dropdown link
-              </a>
-              <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Link 1</a>
-                  <a class="dropdown-item" href="#">Link 2</a>
-                  <a class="dropdown-item" href="#">Link 3</a>
-              </div>
-          </li>-->
+          <li>
+              <a href="#ContactSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Contacts</a>
+              <ul class="collapse list-unstyled" id="ContactSubmenu">
+                  <li>
+                      <a href="{{ "/User/Contact" | absolute_url }}">Contacts</a>
+                  </li>
+                  <li>
+                      <a href="{{ "/User/ClientLogin" | absolute_url }}">ClientLogin</a>
+                  </li>
+              </ul>
+          </li>
           <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
           </li>
@@ -49,19 +43,18 @@
 
 <!--<div class="d-none d-xl-block col-xl-2 bd-toc">
     <ul class="section-nav">
-        <li class="toc-entry toc-h2"><a href="{{ "/User/Setup" | absolute_url }}">Setup Easycloudbooks</a></li>
+        <li class="toc-entry toc-h2"></li>
         <li class="toc-entry toc-h2">
-            <a href="{{ "/User/Home" | absolute_url }}">Dashboard</a>
             <ul>
                 <li class="toc-entry toc-h3"><a href="{{ "/User/Home" | absolute_url }}">Home</a></li>
-                <li class="toc-entry toc-h3"><a href="{{ "/User/PersonalGadgets" | absolute_url }}">Personal Gadgets</a></li>
+                <li class="toc-entry toc-h3"></li>
             </ul>
         </li>
         <li class="toc-entry toc-h2">
             <a href="{{ "/User/Contact" | absolute_url }}">Contacts</a>
             <ul>
-                <li class="toc-entry toc-h3"><a href="{{ "/User/Contact" | absolute_url }}">Contacts</a></li>
-                <li class="toc-entry toc-h3"><a href="{{ "/User/ClientLogin" | absolute_url }}">ClientLogin</a></li>
+                <li class="toc-entry toc-h3"></li>
+                <li class="toc-entry toc-h3"></li>
 
             </ul>
         </li>
