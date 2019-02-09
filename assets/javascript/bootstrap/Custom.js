@@ -1,6 +1,6 @@
 ﻿
 var ul = document.getElementById("main");
-var btns = ul.getElementsByClassName("nav-item");
+var btns = ul.getElementsByClassName("a");
 for (var i = 0; i < btns.length; i++) {
     alert(i);
   btns[i].addEventListener("click", function() {
