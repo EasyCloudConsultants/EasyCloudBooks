@@ -8,12 +8,12 @@
 <nav class="navbar navbar-expand-md bg-blue navbar-dark navbarfull">
   
   <div class="collapse navbar-collapse nav-position" id="collapsibleNavbar">
-      <ul id="main" class="navbar-nav linetonav">
-          <li class="a nav-item action" >
-              <a class="nav-link" href="{{ "/User/Setup" | absolute_url }}">Setup Easycloudbooks</a>
+      <ul  class="navbar-nav linetonav">
+          <li class="nav-item">
+              <a class="nav-link active" href="{{ "/User/Setup" | absolute_url }}">Setup Easycloudbooks</a>
           </li>
           <li class="nav-item">
-              <a  href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle a nav-link">Dashboards</a>
+              <a  href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">Dashboards</a>
               <ul class="collapse list-unstyled" id="homeSubmenu">
                   <li>
                       <a class="fa fa-home nav-link" href="{{ "/User/Home" | absolute_url }}">Home</a>
@@ -24,7 +24,7 @@
               </ul>
           </li>
           <li class="nav-item">
-              <a href="#ContactSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle a nav-link">Contacts</a>
+              <a href="#ContactSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">Contacts</a>
               <ul class="collapse list-unstyled" id="ContactSubmenu">
                   <li>
                       <a class="nav-link" href="{{ "/User/Contact" | absolute_url }}">Contacts</a>
