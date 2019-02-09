@@ -5,6 +5,6 @@ $(document).ready(function () {
     $('ul a[href="' + url + '"]').parent().addClass('action');
     $('ul.linetonav a').filter(function () {
         return this.href === url;
-    }).parent().addClass('action');
+    }).parent().addClass('action1');
    
 });
