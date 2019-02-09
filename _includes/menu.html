@@ -12,7 +12,7 @@
           <li class="nav-item">
               <a class="nav-link" href="{{ "/User/Setup" | absolute_url }}">Setup Easycloudbooks</a>
           </li>
-          <li>
+          <li class="nav-item">
               <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Dashboards</a>
               <ul class="collapse list-unstyled" id="homeSubmenu">
                   <li>
@@ -23,7 +23,7 @@
                   </li>
               </ul>
           </li>
-          <li>
+          <li class="nav-item">
               <a href="#ContactSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Contacts</a>
               <ul class="collapse list-unstyled" id="ContactSubmenu">
                   <li>
@@ -35,7 +35,149 @@
               </ul>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="{{ "/User/Company" | absolute_url }}">Company</a>
+          </li>
+          <li class="nav-item">
+              <a href="#ProjectsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Projects</a>
+              <ul class="collapse list-unstyled" id="ProjectsSubmenu">
+                  <li>
+                      <a class="nav-link" href="{{ "/User/Projects" | absolute_url }}">Projects</a>
+                  </li>
+                  <li>
+                      <a class="nav-link" href="{{ "/User/ReviewProjects" | absolute_url }}">Review Projects</a>
+                  </li>
+                  <li>
+                      <a class="nav-link" href="{{ "/User/FinishedProjects" | absolute_url }}">Finished Projects</a>
+                  </li>
+                  <li>
+                      <a class="nav-link" href="{{ "/User/ProjectImport" | absolute_url }}">Project Import</a>
+                  </li>
+                  <li>
+                      <a class="nav-link" href="{{ "/User/ServiceScheduler" | absolute_url }}">Service Scheduler</a>
+                  </li>
+                  <li>
+                      <a class="nav-link" href="{{ "/User/Accounts" | absolute_url }}">Accounts</a>
+                  </li>
+                  <li>
+                      <a class="nav-link" href="{{ "/User/PaymentLog" | absolute_url }}">Payment Log</a>
+                  </li>
+              </ul>
+          </li>
+          <li class="nav-item">
+              <a href="#DocumentsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Documents</a>
+              <ul class="collapse list-unstyled" id="DocumentsSubmenu">
+                  <li>
+                      <a class="nav-link" href="{{ "/User/Document" | absolute_url }}">Documents</a>
+                  </li>
+                  <li>
+                      <a class="nav-link" href="{{ "/User/DocumentLog" | absolute_url }}">Document Log</a>
+                  </li>
+                  <li>
+                      <a class="nav-link" href="{{ "/User/Export" | absolute_url }}">Export</a>
+                  </li>
+              </ul>
+          </li>
+          <li class="nav-item">
+
+              <a class="nav-link" href="{{ "/User/TimeSheet" | absolute_url }}">TimeSheet</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="{{ "/User/Setup" | absolute_url }}">InOut Documents</a>
+          </li>
+          <li class="nav-item">
+              <a href="#QuerySubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Query</a>
+              <ul class="collapse list-unstyled" id="QuerySubmenu">
+                  <li>
+                      <a href="{{ "/User/Query" | absolute_url }}">Query</a>
+                  </li>
+                  <li>
+                      <a href="{{ "/User/QueryBuilder" | absolute_url }}">Query Builder</a>
+                  </li>
+                  <li>
+                      <a href="{{ "/User/Scheduler" | absolute_url }}">Scheduler</a>
+                  </li>
+                  <li>
+                      <a href="{{ "/User/CustomField" | absolute_url }}">Custom Field</a>
+                  </li>
+                  <li>
+                      <a href="{{ "/User/AccountStatemenTax" | absolute_url }}">Tax Settings</a>
+                  </li>
+              </ul>
+          </li>
+          <li class="nav-item">
+              <a href="#EmailSMSSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Email/SMS</a>
+              <ul class="collapse list-unstyled" id="EmailSMSSubmenu">
+                  <li>
+                      <a href="{{ "/notify/NotifyDashboard" | absolute_url }}">Notify Dashboard</a>
+                  </li>
+                  <li>
+                      <a href="{{ "/notify/EmailLog" | absolute_url }}">Email Log</a>
+                  </li>
+                  <li>
+                      <a href="{{ "/notify/SMSLog" | absolute_url }}">SMS Log</a>
+                  </li>
+                  <li>
+                      <a href="{{ "/notify/EmailTemplate" | absolute_url }}">Email Templates</a>
+                  </li>
+                  <li>
+                      <a href="{{ "/notify/CreateNotification" | absolute_url }}">Create Notification</a>
+                  </li>
+                  <li>
+                      <a href="{{ "/notify/Automation" | absolute_url }}">Automation</a>
+                  </li>
+              </ul>
+          </li>
+          <li class="nav-item">
+              <a href="#SettingsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Settings</a>
+              <ul class="collapse list-unstyled" id="SettingsSubmenu">
+                  <li>
+                      <a href="{{ "/User/Staff" | absolute_url }}">Staff</a>
+                  </li>
+                  <li>
+                      <a href="{{ "/User/ManageYear" | absolute_url }}">Year &amp; Periods</a>
+                  </li>
+                  <li>
+                      <a href="{{ "/User/Services" | absolute_url }}">Services</a>
+                  </li>
+                  <li>
+                      <a href="{{ "/User/Team" | absolute_url }}">Team</a>
+                  </li>
+                  <li>
+                      <a href="{{ "/User/Settings" | absolute_url }}">Settings</a>
+                  </li>
+                  <li>
+                      <a href="{{ "/User/Template" | absolute_url }}">Project Templates</a>
+                  </li>
+                  <li>
+                      <a href="{{ "/User/Role" | absolute_url }}">Roles</a>
+                  </li>
+                  <li>
+                      <a href="{{ "/User/ActivePackages" | absolute_url }}">Active Packages</a>
+                  </li>
+                  <li>
+                      <a href="{{ "/User/Package" | absolute_url }}">Buy Package</a>
+                  </li>
+              </ul>
+          </li>
+          <li class="nav-item">
+              <a href="#MiscellaneousSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Miscellaneous</a>
+              <ul class="collapse list-unstyled" id="MiscellaneousSubmenu">
+                  <li>
+                      <a href="{{ "/User/GlobalSearch" | absolute_url }}">Global Search</a>
+                  </li>
+                  <li>
+                      <a href="{{ "/User/UserProfile" | absolute_url }}">User profile</a>
+                  </li>
+                  <li>
+                      <a href="{{ "/User/ChangeLog" | absolute_url }}">Change Log</a>
+                  </li>
+                  <li>
+                      <a href="{{ "/User/Notifications" | absolute_url }}">Notifications</a>
+                  </li>
+                  <li>
+                      <a href="{{ "/User/SampleExcelFiles" | absolute_url }}">SampleExcelFiles</a>
+                  </li>
+              </ul>
           </li>
       </ul>
   </div>  
@@ -107,7 +249,7 @@
             </ul>
         </li>
         <li class="toc-entry toc-h2">
-            <a href="{{ "/User/notifydashboard" | absolute_url }}">Settings</a>
+            <a href="{{ "/User/" | absolute_url }}">Settings</a>
             <ul>
                 <li class="toc-entry toc-h3"><a href="{{ "/User/Staff" | absolute_url }}">Staff</a></li>
                 <li class="toc-entry toc-h3"><a href="{{ "/User/ManageYear" | absolute_url }}">Year &amp; Periods</a></li>
@@ -121,7 +263,7 @@
             </ul>
         </li>
         <li class="toc-entry toc-h2">
-            <a href="{{ "/User/notifydashboard" | absolute_url }}">Miscellaneous </a>
+            <a href="{{ "/User/" | absolute_url }}">Miscellaneous </a>
             <ul>
                 <li class="toc-entry toc-h3"><a href="{{ "/User/GlobalSearch" | absolute_url }}">Global Search</a></li>
                 <li class="toc-entry toc-h3"><a href="{{ "/User/UserProfile" | absolute_url }}">User profile</a></li>
