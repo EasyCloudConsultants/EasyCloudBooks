@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     $('ul.linetonav a').filter(function () {
         return this.href === url;
-    }).parent().addClass('active').parent().parent().addClass('active');
+    }).parent().addClass('active').parent().parent().parent().addClass('show');
 
    
 });
