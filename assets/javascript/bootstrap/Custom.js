@@ -1,12 +1,9 @@
-
-
 $(document).ready(function () {
     var url = window.location;
-    $('ul.linetonav a[href="' + url + '"]').parent().addClass('action');
+    $('li.inner a[href="' + url + '"]').parent().addClass('active');
 
-    $('ul.linetonav a').filter(function () {
+    $('li.inner').filter(function () {
         return this.href === url;
-    }).parent().addClass('active').parent().children().addClass('show');
+    }).children().addClass('active').parent().parent().addClass('show');
 
-  
 });
