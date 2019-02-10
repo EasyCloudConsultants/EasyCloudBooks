@@ -5,8 +5,5 @@ $(document).ready(function () {
     $('li.inner').filter(function () {
         return this.href === url;
     }).children().addClass('action');
-    var x= $(this).parent();
-   
-    var link = $('x').attr('href');
-    $('link').click();
+
 });
