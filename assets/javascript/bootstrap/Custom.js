@@ -1,9 +1,5 @@
 $(document).ready(function () {
     var url = window.location;
-    $('li.inner a[href="' + url + '"]').parent().addClass('action');
-
-    $('li.inner').filter(function () {
-        return this.href === url;
-    }).children().addClass('action').parent().parent().css("font-size","50px");
+    $('.main-menu li').find('a[href="'+url+'"]').parents('li').addClass('active');
 
 });
