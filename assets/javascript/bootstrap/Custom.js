@@ -4,6 +4,6 @@ $(document).ready(function () {
 
     $('li.inner').filter(function () {
         return this.href === url;
-    }).children().addClass('action').parent().append().click();
+    }).children().addClass('action').parent().parent().append().click();
 
 });
