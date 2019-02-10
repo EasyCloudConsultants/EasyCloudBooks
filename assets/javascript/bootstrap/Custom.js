@@ -2,9 +2,9 @@
 
 $(document).ready(function () {
     var url = window.location;
-    $('ul.linetonav li a[href="' + url + '"]').parent().addClass('actionmain');
+    $('ul.linetonav li a[href="' + url + '"]').parent().addClass('action');
 
-    $('ul.linetonav a').filter(function () {
+    $('ul.linetonav li a').filter(function () {
         return this.href === url;
     }).parent().addClass('active').parent().children().addClass('show');
 
