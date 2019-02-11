@@ -18,7 +18,7 @@ alert(heightWithoutNavbar);
         alert(wrapperHeigh);
         if (navbarHeigh > wrapperHeigh) {
             $('.bd-content').css("min-height", navbarHeigh + "px");
-            alert("hello");
+            alert("hey");
         }
 
         if (navbarHeigh < wrapperHeigh) {
