@@ -11,10 +11,11 @@ $(document).ready(function () {
        var heightWithoutNavbar = $("body > .page-content").height() - 61;
    // $(".sidebard-panel").css("min-height", heightWithoutNavbar + "px");
 alert(heightWithoutNavbar);
-        alert(navbarHeigh);
-        alert(wrapperHeigh);
+      
         var navbarHeigh = $('#main-menu').height();
         var wrapperHeigh = $('.bd-content').height();
+          alert(navbarHeigh);
+        alert(wrapperHeigh);
         if (navbarHeigh > wrapperHeigh) {
             $('.bd-content').css("min-height", navbarHeigh + "px");
             alert("hello");
