@@ -5,26 +5,23 @@ $(document).ready(function () {
         $(element).addClass('show');
     });
 
-    alert("hey");
-heightadd();
 
-  function heightadd(){ 
-   var heightWithoutNavbar = $("body > .page-content").height() - 61;
-  $(".sidebard-panel").css("min-height", heightWithoutNavbar + "px");
-alert(heightWithoutNavbar);
-      
+    function fix_height() {
+        //  var heightWithoutNavbar = $("body > .page-content").height() - 61;
+        // $(".sidebard-panel").css("min-height", heightWithoutNavbar + "px");
+
+
         var navbarHeigh = $('#main-menu').height();
         var wrapperHeigh = $('.bd-content').height();
-          alert(navbarHeigh);
-        alert(wrapperHeigh);
+
         if (navbarHeigh > wrapperHeigh) {
-            $('.bd-content').css("min-height", navbarHeigh + "px");
-            alert("hey");
+            $('#main-menu').css("min-height", navbarHeigh + "px");
+
         }
 
         if (navbarHeigh < wrapperHeigh) {
-            $('.bd-content').css("min-height", $(window).height() + "px");
-            alert("hello");
+            $('#main-menu').css("min-height", $(window).height() + "px");
+
         }
 
     }
