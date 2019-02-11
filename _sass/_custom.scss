@@ -11,10 +11,12 @@ body
 .card-header:after {
     border-bottom: 2px solid rgba(0,0,0,0.125);
 }
+.breadcrumb-item a {
+    color: #563d7c;
+}
 
-.bg-blue
-{
-    background-color:#563d7c;
+.bg-blue {
+    background-color: #563d7c;
 }
 
 
