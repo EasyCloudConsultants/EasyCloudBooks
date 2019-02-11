@@ -8,9 +8,9 @@ $(document).ready(function () {
     fix_height();
 
     function fix_height() {
-       // var heightWithoutNavbar = $("body > .page-content").height() - 61;
+       var heightWithoutNavbar = $("body > .page-content").height() - 61;
    // $(".sidebard-panel").css("min-height", heightWithoutNavbar + "px");
-alert("hello");
+alert(heightWithoutNavbar);
         alert(navbarHeigh);
         alert(wrapperHeigh);
         var navbarHeigh = $('#main-menu').height();
