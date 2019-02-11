@@ -1,6 +1,38 @@
+<div class="row">
+    <div class="container-fluid">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-3">
+            <p class="h5 mb-3">{{ site.title | escape }}</p>
+        </div>
+        <div class="col-lg-3">
+            <ul class="list-unstyled">
+                <li>
+                    {%- if site.author -%}
+                    {{ site.author | escape }}
+                    {%- else -%}
+                    {{ site.title | escape }}
+                    {%- endif -%}
+                </li>
+                {%- if site.email -%}
+                <li>
+                    <a href="mailto:{{ site.email }}">
+                        {{ site.email }}
+                    </a>
+                </li>
+                {%- endif -%}
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <div class="col-sm text-right">
+                <p>{{- site.description | escape -}}</p>
+                
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
 
-
-<div class="py-5 border-top">
+<!--<div class="py-5 border-top">
   <div class="container">
 
     <p class="h5 mb-3">{{ site.title | escape }}</p>
@@ -37,4 +69,4 @@
     </div>
 
   </div>
-</div>
+</div>-->
