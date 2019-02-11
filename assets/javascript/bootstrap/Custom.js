@@ -4,5 +4,5 @@ $(document).ready(function () {
     $.each($('.main-menu li').find('a[href="' + url + '"]').parents('li').find('ul'), function (e, element) {
         $(element).addClass('show');
     });
-    $('.main-menu li a[href="' + url + '"]').addClass('action');
+ 
 });
