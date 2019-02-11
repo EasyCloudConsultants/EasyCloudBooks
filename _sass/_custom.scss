@@ -36,7 +36,7 @@ a.txt-white i
 {
     padding-right:7px;
 }
-@media (min-width:767px) {
+@media (min-width:777px) {
 
     .nav-position {
         position: absolute;
@@ -45,7 +45,7 @@ a.txt-white i
     }
 
     .navbarfull {
-        width: 16%;
+        width: 18%;
         overflow-y: auto;
     }
 }
@@ -64,6 +64,11 @@ a.txt-white i
             background-color: #fff;
             color: #563d7c;
         }
+        .textright
+        {
+            text-align:left;
+
+        }
     }
 
 
@@ -81,13 +86,14 @@ a.txt-white i
     box-shadow: 0px 15px 10px -15px;
 }
 
-// text
+// text page
 
 .faq-question {
     color: #563d7c !important;
 }
 
 //footer
+
 .float-left
 {
     float:left;
@@ -100,5 +106,15 @@ a.txt-white i
     color: #6c757d;
 }
 .footer-main-line {
+
     color:#000000b3;
+}
+
+.footer-list-unstyled
+{   padding-left:0px;
+    list-style:none;
+}
+.textright
+{
+    text-align:right;
 }
