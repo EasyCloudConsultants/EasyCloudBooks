@@ -7,20 +7,15 @@ $(document).ready(function () {
 
 
    $("#main-menu").click(function () {
-       // var heightWithoutNavbar = $("body > .page-content").height() - 61;
-        // $(".sidebard-panel").css("min-height", heightWithoutNavbar + "px");
-
+      
        
         var navbarHeigh = $('#main-menu').height();
         var wrapperHeigh = $('.bd-content').height();
         var heightadd = navbarHeigh + 225;
-        alert(navbarHeigh);
-        alert(heightadd);
+        
         if (navbarHeigh > wrapperHeigh) {
             $('#main-menu').css("min-height", heightadd + "px");
-
         }
-
         if (navbarHeigh < wrapperHeigh) {
             $('#main-menu').css("min-height", $(window).height() + "px");
 
