@@ -5,11 +5,12 @@ $(document).ready(function () {
         $(element).addClass('show');
     });
 
+    alert("hey");
+heightadd();
 
-
-    $(window).scroll(function () { 
-       var heightWithoutNavbar = $("body > .page-content").height() - 61;
-   // $(".sidebard-panel").css("min-height", heightWithoutNavbar + "px");
+  funcation heightadd(){ 
+   var heightWithoutNavbar = $("body > .page-content").height() - 61;
+  $(".sidebard-panel").css("min-height", heightWithoutNavbar + "px");
 alert(heightWithoutNavbar);
       
         var navbarHeigh = $('#main-menu').height();
