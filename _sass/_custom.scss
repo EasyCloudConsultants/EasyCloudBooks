@@ -133,9 +133,7 @@ a:visited {
 }
 
 a.btnview {
-
-    float: left;
-    width: 86px;
+    
     padding: 0;
     margin: 10px 20px 10px 0;
     font-weight: 400;
@@ -144,6 +142,8 @@ a.btnview {
     color: #FFF;
     border-radius: 5px;
     transition: all 0.2s;
+    font-size: 15px;
+
 }
 
 .btncloud {
@@ -160,14 +160,4 @@ a.btnview {
     margin-bottom: 5px;
 }
 
-.btncloud.btnPush:hover {
-    box-shadow: 0px 0px 0px 0px #007144;
-}
 
-.btncloud.btnBorder {
-    box-shadow: 0px 0px 0px 0px #21825B;
-}
-
-.btncloud.btnBorder:hover {
-    box-shadow: 0px 0px 0px 5px #21825B;
-}
