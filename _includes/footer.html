@@ -1,5 +1,26 @@
+<footer>
+    <div class="row">
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="col-sm-3">
+                    <h4>{{ site.title | escape }}</h4>
+                </div>
+                <div class="col-sm-3">
+                    <h5><a href="mailto:{{ site.email }}">{{ site.email }}</a></h5>
+                </div>
+                <div class="col-sm-2">
 
-<div class="py-5 border-top">
+                </div>
+                <div class="col-sm-4">
+                    <h5>{{- site.description | escape -}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!--<div class="py-5 border-top">
   <div class="container">
 
     <p class="h5 mb-3">{{ site.title | escape }}</p>
@@ -36,4 +57,4 @@
     </div>
 
   </div>
-</div>
+</div>-->
