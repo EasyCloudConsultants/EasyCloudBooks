@@ -5,9 +5,9 @@ $(document).ready(function () {
         $(element).addClass('show');
     });
 
-    fix_height();
 
-    function fix_height() {
+
+    $(window).scroll(function () { 
        var heightWithoutNavbar = $("body > .page-content").height() - 61;
    // $(".sidebard-panel").css("min-height", heightWithoutNavbar + "px");
 alert(heightWithoutNavbar);
