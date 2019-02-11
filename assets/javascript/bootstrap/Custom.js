@@ -6,7 +6,7 @@ $(document).ready(function () {
     });
 
 
-    function fix_height() {
+    $("#main-menu").click(function () {
         //  var heightWithoutNavbar = $("body > .page-content").height() - 61;
         // $(".sidebard-panel").css("min-height", heightWithoutNavbar + "px");
 
@@ -24,7 +24,7 @@ $(document).ready(function () {
 
         }
 
-    }
+    });
 
   
 });
