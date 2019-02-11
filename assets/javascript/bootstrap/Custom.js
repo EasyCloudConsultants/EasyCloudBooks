@@ -8,7 +8,7 @@ $(document).ready(function () {
     alert("hey");
 heightadd();
 
-  funcation heightadd(){ 
+  function heightadd(){ 
    var heightWithoutNavbar = $("body > .page-content").height() - 61;
   $(".sidebard-panel").css("min-height", heightWithoutNavbar + "px");
 alert(heightWithoutNavbar);
