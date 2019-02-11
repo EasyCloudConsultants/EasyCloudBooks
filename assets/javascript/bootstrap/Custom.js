@@ -7,7 +7,7 @@ $(document).ready(function () {
 
 
     $("#main-menu").click(function () {
-        //  var heightWithoutNavbar = $("body > .page-content").height() - 61;
+        var heightWithoutNavbar = $("body > .page-content").height() - 61;
         // $(".sidebard-panel").css("min-height", heightWithoutNavbar + "px");
 
 
