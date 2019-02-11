@@ -115,7 +115,11 @@ a.txt-white i
     padding-left:0px;
     list-style:none;
 }
-.textright
+
+
+@media (min-width:767px)
 {
-    text-align:right;
+    .textright {
+        text-align: right;
+    }
 }
