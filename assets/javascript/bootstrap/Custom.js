@@ -13,7 +13,7 @@ $(document).ready(function () {
        
         var navbarHeigh = $('#main-menu').height();
         var wrapperHeigh = $('.bd-content').height();
-        var heightadd = navbarHeigh + 325;
+        var heightadd = navbarHeigh + 225;
         alert(navbarHeigh);
         alert(heightadd);
         if (navbarHeigh > wrapperHeigh) {
