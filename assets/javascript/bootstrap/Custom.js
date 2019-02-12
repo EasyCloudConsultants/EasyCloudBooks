@@ -9,7 +9,7 @@ $(document).ready(function () {
        
     });
 
-    $(window).bind("load resize hover scroll", function () {
+    $(window).bind("load resize scroll", function () {
 
        heightadd();
            
@@ -25,7 +25,7 @@ function heightadd() {
     var url = location.href;
     $('.main-menu li').find('a[href="' + url + '"]').parents('li').addClass('active');
 
-    $.each($('.main-menu li a').parents('li').find('ul'), function (e, element) {
+    $.each($('.main-menu li').parents('li').find('ul'), function (e, element) {
         $(element).removeClass('show');
     });
 
@@ -38,8 +38,8 @@ function heightadd() {
 
     });
 
-    $.each($('.main-menu li a').parents('li').find('ul'), function (e, element) {
-        $(element).removeClass('show');
+    $.each($('.main-menu li a').find('a[href="' + url + '"]').parents('li').find('ul'), function (e, element) {
+        $(element).addClass('show');
     });
     var navbarHeigh = $('#main-menu').height();
     var wrapperHeigh = $('#collapsibleNavbar').height();
