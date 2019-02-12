@@ -35,9 +35,7 @@ function heightadd() {
 
     $.each($('.main-menu li a').parents('li').find('ul'), function (e, element) {
         $(element).click(function () {
-
             heightview = $(this).height();
-
         });
 
     });
