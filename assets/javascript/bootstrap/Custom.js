@@ -4,7 +4,7 @@ $(document).ready(function () {
     $('.main-menu li').find('a[href="' + url + '"]').parents('li').addClass('active');
 
 
-    $.each($('.main-menu li a').find('a[href="' + url + '"]').parents('li').find('ul'), function (e, element) {
+    $.each($('.main-menu li ').find('a[href="' + url + '"]').parents('li').find('ul'), function (e, element) {
         $(element).addClass('show');
     });
 
