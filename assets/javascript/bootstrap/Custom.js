@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     if ($(window).width() > 767) {
 
-        $(window).on("load resize", function (e) {
+        $(window).on("load resize scroll", function (e) {
            heightadd();
        });
         $.each($('.main-menu li a').parents('li'), function (e, element) {
@@ -28,7 +28,7 @@ $(document).ready(function () {
     }
 
     function heightadd() {
-
+        
         var navbarHeigh = $('#main-menu').height();
         var wrapperHeigh = $('#collapsibleNavbar').height();
         var heightadd = wrapperHeigh + heightview;
