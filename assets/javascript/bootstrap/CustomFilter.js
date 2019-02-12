@@ -1,13 +1,13 @@
 
     $(function () {
 
-                                        var qn = urlQueryString["qn"];
-                                        if (qn === 'undefined' || qn === null || qn === undefined) {
-        qn = "";
+    var qn = urlQueryString["qn"];
+    if (qn === 'undefined' || qn === null || qn === undefined) {
+    qn = "";
     }
-                                        $('#tableFilterParamer thead tr.search th').each(function () {
-                                            var title = $('#tableFilterParamer thead th').eq($(this).index()).text();
-                                            if (title !== '#') {
+    $('#tableFilterParamer thead tr.search th').each(function () {
+    var title = $('#tableFilterParamer thead th').eq($(this).index()).text();
+    if (title !== '#') {
         $(this).html('');
      var searchtxt = $('<input type="text" class=\'form-control\' placeholder="Search ' + title + '" style="width:100%;"/>');
 
