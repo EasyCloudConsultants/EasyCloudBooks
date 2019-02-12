@@ -8,104 +8,105 @@ layout: default
     </ol>
 </nav>
 
-    
+
 <div class="row">
     <div class="col-lg-12">
         <div class="wrapper wrapper-content animated fadeInRight">
-            <div class="card mb-2">
-                <div class="card-header bg-transparent border-success"><h1 class="display-4">Personal Gadgets</h1></div>
-                <iframe class="card-img-top" src="https://www.youtube.com/embed/aDW9GvYh0Bo" allowfullscreen="" frameborder="0" style=" min-height: 300px;"></iframe>
-                <div class="card-body">
-                    <p class="card-text">Personal Gadgets is used to track important metrics for quick reference and control purpose. You can create gadgets by creating queries through queries builder module and then applying that query in creating gadget.</p>
-                </div>
-            </div>
-            <div class="card mb-2">
-                <div class="card-header" id="faq1h">
-                    <h5 class="mb-0">
-                        <a data-toggle="collapse" href="#faq1" class="faq-question">How to Create 'Cash &amp; Bank Balance' Personal Gadget ?</a>
-                    </h5>
-                </div>
-                <div id="faq1" class="collapse" aria-labelledby="faq1" data-parent="#accordion">
+            <div id="accordion">
+                <div class="card mb-2">
+                    <div class="card-header bg-transparent border-success"><h1 class="display-4">Personal Gadgets</h1></div>
+                    <iframe class="card-img-top" src="https://www.youtube.com/embed/aDW9GvYh0Bo" allowfullscreen="" frameborder="0" style=" min-height: 300px;"></iframe>
                     <div class="card-body">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <a class="fancybox-buttons" href="faqimages/querybuilder/cash and bank balance query.png" title="Query Builder Page">
-                                    <img class="img-responsive imgmargin" src="faqimages/querybuilder/thumb/cash and bank balance query.png" alt="Query Builder Page">
-                                </a>
+                        <p class="card-text">Personal Gadgets is used to track important metrics for quick reference and control purpose. You can create gadgets by creating queries through queries builder module and then applying that query in creating gadget.</p>
+                    </div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-header" id="faq1h">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#faq1" class="faq-question">How to Create 'Cash &amp; Bank Balance' Personal Gadget ?</a>
+                        </h5>
+                    </div>
+                    <div id="faq1" class="collapse" aria-labelledby="faq1" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <a class="fancybox-buttons" href="faqimages/querybuilder/cash and bank balance query.png" title="Query Builder Page">
+                                        <img class="img-responsive imgmargin" src="faqimages/querybuilder/thumb/cash and bank balance query.png" alt="Query Builder Page">
+                                    </a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>
+                                        <strong>Step 1:</strong>
+                                        For achieve this at first you need to create related query by following below steps<br>
+                                        - Goto query builder page<br>
+                                        - Click on create new button on query builder page.<br>
+                                        - Type proper name of query like Cash and Bank Balance so that we can use it for filter in future.<br>
+                                        - In builder section choose parameter “Account : type equal Bank Accounts”,
+                                        <br>
+                                        click +add rule and choose “Account : type equal Cash in hands”,
+                                        <br>
+                                        click +add rule and choose “Account : type equal Bank OD Accounts”, select OR operator between them.<br>
+                                        - You can create personal or shared type query.<br>
+                                        - Save this query for future use.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="col-lg-6">
-                                <p>
-                                    <strong>Step 1:</strong>
-                                    For achieve this at first you need to create related query by following below steps<br>
-                                    - Goto query builder page<br>
-                                    - Click on create new button on query builder page.<br>
-                                    - Type proper name of query like Cash and Bank Balance so that we can use it for filter in future.<br>
-                                    - In builder section choose parameter “Account : type equal Bank Accounts”,
-                                    <br>
-                                    click +add rule and choose “Account : type equal Cash in hands”,
-                                    <br>
-                                    click +add rule and choose “Account : type equal Bank OD Accounts”, select OR operator between them.<br>
-                                    - You can create personal or shared type query.<br>
-                                    - Save this query for future use.
-                                </p>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <a class="fancybox-buttons" href="faqimages/gadgets/cash and bank balance.png" title="Gadgets">
-                                    <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/cash and bank balance.png">
-                                </a>
-                            </div>
-                            <div class="col-lg-6">
-                                <p>
-                                    <strong>Step 2:</strong>
-                                    - Now goto personal gadgets page and click on + Gadgets button for creating new gadget.<br>
-                                    - Write proper name of gadget like Cash and Bank Balance.<br>
-                                    - Create new group or select existing group (if you create one before) from drop down.<br>
-                                    - Click on +button for adding scheduler or type initials for select saved scheduler from drop down.<br>
-                                    - Select type of objects from the dropdown in parameter section. In our case we select ‘Account’ .<br>
-                                    - Select type of sub object from the dropdown in parameter section. In our case we select ‘Total Balance’ .<br>
-                                    - Select type of value from the dropdown. In our case we select ‘Total’ .<br>
-                                    - Select query builder search in builder section, then select equal then type initials for selecting saved query from the dropdown. In our case we select Cash and Bank Balance query.<br>
-                                    - On Is reverse switch if this gadget's value getting low means good.<br>
-                                    - Write unit of result.<br>
-                                    - Finally click on save changes button.
+                            <hr>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <a class="fancybox-buttons" href="faqimages/gadgets/cash and bank balance.png" title="Gadgets">
+                                        <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/cash and bank balance.png">
+                                    </a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>
+                                        <strong>Step 2:</strong>
+                                        - Now goto personal gadgets page and click on + Gadgets button for creating new gadget.<br>
+                                        - Write proper name of gadget like Cash and Bank Balance.<br>
+                                        - Create new group or select existing group (if you create one before) from drop down.<br>
+                                        - Click on +button for adding scheduler or type initials for select saved scheduler from drop down.<br>
+                                        - Select type of objects from the dropdown in parameter section. In our case we select ‘Account’ .<br>
+                                        - Select type of sub object from the dropdown in parameter section. In our case we select ‘Total Balance’ .<br>
+                                        - Select type of value from the dropdown. In our case we select ‘Total’ .<br>
+                                        - Select query builder search in builder section, then select equal then type initials for selecting saved query from the dropdown. In our case we select Cash and Bank Balance query.<br>
+                                        - On Is reverse switch if this gadget's value getting low means good.<br>
+                                        - Write unit of result.<br>
+                                        - Finally click on save changes button.
 
-                                </p>
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <a class="fancybox-buttons" href="faqimages/gadgets/cash and bank balance gadget.png" title="Gadgets">
-                                    <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/cash and bank balance gadget.png">
-                                </a>
-                            </div>
-                            <div class="col-lg-6">
-                                <p>
-                                    - Now you can see Cash and Bank Balance gadget on screen.<br>
-                                    - There are many buttons on this gadgets, like view results,copy gadgets,edit gadgets, refresh now and delete gadget.<br>
-                                    - You can change group name by click on edit group button.<br>
-                                    - Click on view result button for view final result of query.<br>
-                                    - It is redirected to pages according to query.<br>
-                                    - All Gadgets which are created previously shown here on personal gadgets page.
-                                </p>
+                            <hr>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <a class="fancybox-buttons" href="faqimages/gadgets/cash and bank balance gadget.png" title="Gadgets">
+                                        <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/cash and bank balance gadget.png">
+                                    </a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>
+                                        - Now you can see Cash and Bank Balance gadget on screen.<br>
+                                        - There are many buttons on this gadgets, like view results,copy gadgets,edit gadgets, refresh now and delete gadget.<br>
+                                        - You can change group name by click on edit group button.<br>
+                                        - Click on view result button for view final result of query.<br>
+                                        - It is redirected to pages according to query.<br>
+                                        - All Gadgets which are created previously shown here on personal gadgets page.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card mb-2">
-                <div class="card-header" id="faq2h">
-                    <h5 class="mb-0">
-                        <a data-toggle="collapse" href="#faq2" class="faq-question">How to Create 'Creditors Balance' Personal Gadget ?</a>
-                    </h5>
-                </div>
-                <div id="faq2" class="collapse" aria-labelledby="faq2" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class="row">
+                <div class="card mb-2">
+                    <div class="card-header" id="faq2h">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#faq2" class="faq-question">How to Create 'Creditors Balance' Personal Gadget ?</a>
+                        </h5>
+                    </div>
+                    <div id="faq2" class="collapse" aria-labelledby="faq2" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/querybuilder/creditors balance query.png" title="Query Builder Page">
                                         <img class="img-responsive imgmargin" src="faqimages/querybuilder/thumb/creditors balance query.png" alt="Query Builder on gadgets">
@@ -128,9 +129,9 @@ layout: default
 
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/creditors balance.png" title="Gadgets">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/creditors balance.png">
@@ -152,9 +153,9 @@ layout: default
                                         - finally click on save changes button.
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/creditors balance gadget.png" title="Gadgets">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/creditors balance gadget.png">
@@ -170,21 +171,21 @@ layout: default
                                         - All Gadgets which are created previously shown here on personal gadgets page.<br>
                                     </p>
                                 </div>
-                        </div>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card mb-2">
-                <div class="card-header" id="faq3h">
-                    <h5 class="mb-0">
-                        <a data-toggle="collapse" href="#faq3" class="faq-question">How to Create 'Debtors Balance' Personal Gadget ? </a>
-                    </h5>
-                </div>
-                <div id="faq3" class="collapse" aria-labelledby="faq3" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class="row">
+                <div class="card mb-2">
+                    <div class="card-header" id="faq3h">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#faq3" class="faq-question">How to Create 'Debtors Balance' Personal Gadget ? </a>
+                        </h5>
+                    </div>
+                    <div id="faq3" class="collapse" aria-labelledby="faq3" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/querybuilder/debtors balance query.png" title="Debtors Balance Query">
                                         <img class="img-responsive imgmargin" src="faqimages/querybuilder/thumb/debtors balance query.png" alt="Query Builder on gadgets">
@@ -207,9 +208,9 @@ layout: default
 
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/debtors balance.png" title="Debtors Balance Gadgets">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/debtors balance.png">
@@ -233,9 +234,9 @@ layout: default
 
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/debtors balance gadget.png" title="Debtors Balance Gadgets">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/debtors balance gadget.png">
@@ -253,21 +254,21 @@ layout: default
 
                                     </p>
                                 </div>
-                        </div>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card mb-2">
-                <div class="card-header" id="fa4h">
-                    <h5 class="mb-0">
-                        <a data-toggle="collapse" href="#faq4" class="faq-question">How to Create 'Expense' Personal Gadget ?</a>
-                    </h5>
-                </div>
-                <div id="faq4" class="collapse" aria-labelledby="faq4" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class="row">
+                <div class="card mb-2">
+                    <div class="card-header" id="fa4h">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#faq4" class="faq-question">How to Create 'Expense' Personal Gadget ?</a>
+                        </h5>
+                    </div>
+                    <div id="faq4" class="collapse" aria-labelledby="faq4" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/querybuilder/expenses query.png" title="Expenses Query">
                                         <img class="img-responsive imgmargin" src="faqimages/querybuilder/thumb/expenses query.png" alt="Query Builder on gadgets">
@@ -292,9 +293,9 @@ layout: default
 
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/expenses.png" title="Expenses Gadgets">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/expenses.png">
@@ -318,9 +319,9 @@ layout: default
 
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/expenses gadget.png" title="Expenses Gadgets">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/expenses gadget.png">
@@ -337,21 +338,21 @@ layout: default
 
                                     </p>
                                 </div>
-                        </div>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card mb-2">
-                <div class="card-header" id="faq5h">
-                    <h5 class="mb-0">
-                        <a data-toggle="collapse" href="#faq5" class="faq-question">How to Create 'Income' Personal Gadget ? </a>
-                    </h5>
-                </div>
-                <div id="faq5" class="collapse" aria-labelledby="faq5" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class="row">
+                <div class="card mb-2">
+                    <div class="card-header" id="faq5h">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#faq5" class="faq-question">How to Create 'Income' Personal Gadget ? </a>
+                        </h5>
+                    </div>
+                    <div id="faq5" class="collapse" aria-labelledby="faq5" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/querybuilder/income query.png" title="Income Query">
                                         <img class="img-responsive imgmargin" src="faqimages/querybuilder/thumb/income query.png" alt="Query Builder on gadgets">
@@ -376,9 +377,9 @@ layout: default
 
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/income.png" title="Income Gadgets">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/income.png">
@@ -401,9 +402,9 @@ layout: default
                                         - Finally click on save changes button.
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/income gadget.png" title="Income Gadgets">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/income gadget.png">
@@ -419,21 +420,21 @@ layout: default
                                         - All Gadgets which are created previously shown here on personal gadgets page.<br>
                                     </p>
                                 </div>
-                        </div>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card mb-2">
-                <div class="card-header" id="faq6h">
-                    <h5 class="mb-0">
-                        <a data-toggle="collapse" href="#faq6" class="faq-question">How to Create 'Payment' Personal Gadget ?</a>
-                    </h5>
-                </div>
-                <div id="faq6" class="collapse" aria-labelledby="faq6" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class="row">
+                <div class="card mb-2">
+                    <div class="card-header" id="faq6h">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#faq6" class="faq-question">How to Create 'Payment' Personal Gadget ?</a>
+                        </h5>
+                    </div>
+                    <div id="faq6" class="collapse" aria-labelledby="faq6" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/querybuilder/payments query.png" title="Payments Query">
                                         <img class="img-responsive imgmargin" src="faqimages/querybuilder/thumb/payments query.png" alt="Query Builder on gadgets">
@@ -453,9 +454,9 @@ layout: default
 
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/payments.png" title="Payments Gadgets">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/payments.png">
@@ -478,9 +479,9 @@ layout: default
                                         - Finally click on save changes button.
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/payments gadget.png" title="Payment Gadgets">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/payments gadget.png">
@@ -496,21 +497,21 @@ layout: default
                                         - All Gadgets which are created previously shown here on personal gadgets page.<br>
                                     </p>
                                 </div>
-                        </div>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card mb-2">
-                <div class="card-header" id="faq7h">
-                    <h5 class="mb-0">
-                        <a data-toggle="collapse" href="#faq7" class="faq-question">How to Create 'Receipts' Personal Gadget ?</a>
-                    </h5>
-                </div>
-                <div id="faq7" class="collapse" aria-labelledby="faq7" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class="row">
+                <div class="card mb-2">
+                    <div class="card-header" id="faq7h">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#faq7" class="faq-question">How to Create 'Receipts' Personal Gadget ?</a>
+                        </h5>
+                    </div>
+                    <div id="faq7" class="collapse" aria-labelledby="faq7" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/querybuilder/receipts query.png" title="Receipts Query">
                                         <img class="img-responsive imgmargin" src="faqimages/querybuilder/thumb/receipts query.png" alt="Query Builder on gadgets">
@@ -530,9 +531,9 @@ layout: default
 
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/receipts.png" title="Receipts Gadgets">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/receipts.png">
@@ -555,9 +556,9 @@ layout: default
                                         - Finally click on save changes button.
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/receipts gadget.png" title="Receipts Gadgets">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/receipts gadget.png">
@@ -573,21 +574,21 @@ layout: default
                                         - All Gadgets which are created previously shown here on personal gadgets page.<br>
                                     </p>
                                 </div>
-                        </div>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card mb-2">
-                <div class="card-header" id="faq8h">
-                    <h5 class="mb-0">
-                        <a data-toggle="collapse" href="#faq8" class="faq-question">How to Create ‘Tax Balance’ Personal Gadget ? </a>
-                    </h5>
-                </div>
-                <div id="faq8" class="collapse" aria-labelledby="faq8" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class="row">
+                <div class="card mb-2">
+                    <div class="card-header" id="faq8h">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#faq8" class="faq-question">How to Create ‘Tax Balance’ Personal Gadget ? </a>
+                        </h5>
+                    </div>
+                    <div id="faq8" class="collapse" aria-labelledby="faq8" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/querybuilder/tax balance query.png" title="Tax Balance Query">
                                         <img class="img-responsive imgmargin" src="faqimages/querybuilder/thumb/tax balance query.png" alt="Query Builder on gadgets">
@@ -610,9 +611,9 @@ layout: default
 
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/tax balance.png" title="Tax Balance Gadgets">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/tax balance.png">
@@ -635,9 +636,9 @@ layout: default
                                         - Finally click on save changes button.
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/tax balance gadget.png" title="Tax Balance Gadgets">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/tax balance gadget.png">
@@ -653,21 +654,21 @@ layout: default
                                         - All Gadgets which are created previously shown here on personal gadgets page.<br>
                                     </p>
                                 </div>
-                        </div>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card mb-2">
-                <div class="card-header" id="faq9h">
-                    <h5 class="mb-0">
-                        <a data-toggle="collapse" href="#faq9" class="faq-question">How to Create ‘Unsettled Payments’ Personal Gadget ? </a>
-                    </h5>
-                </div>
-                <div id="faq9" class="collapse" aria-labelledby="faq9" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class="row">
+                <div class="card mb-2">
+                    <div class="card-header" id="faq9h">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#faq9" class="faq-question">How to Create ‘Unsettled Payments’ Personal Gadget ? </a>
+                        </h5>
+                    </div>
+                    <div id="faq9" class="collapse" aria-labelledby="faq9" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/querybuilder/unsettled payments query.png" title="Unsettled Payments Query">
                                         <img class="img-responsive imgmargin" src="faqimages/querybuilder/thumb/unsettled payments query.png" alt="Query Builder on gadgets">
@@ -695,9 +696,9 @@ layout: default
 
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/unsettled payments.png" title="Unsettled Payments Gadgets">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/unsettled payments.png">
@@ -720,9 +721,9 @@ layout: default
 
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/unsettled payments gadget.png" title="Unsettled Payments Gadgets">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/unsettled payments gadget.png">
@@ -738,21 +739,21 @@ layout: default
                                         - All Gadgets which are created previously shown here on personal gadgets page.<br>
                                     </p>
                                 </div>
-                        </div>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card mb-2">
-                <div class="card-header" id="faq10h">
-                    <h5 class="mb-0">
-                        <a data-toggle="collapse" href="#faq10" class="faq-question">How to Create ‘Unsettled Receipts’ Personal Gadget ?</a>
-                    </h5>
-                </div>
-                <div id="faq10" class="collapse" aria-labelledby="faq10" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class="row">
+                <div class="card mb-2">
+                    <div class="card-header" id="faq10h">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#faq10" class="faq-question">How to Create ‘Unsettled Receipts’ Personal Gadget ?</a>
+                        </h5>
+                    </div>
+                    <div id="faq10" class="collapse" aria-labelledby="faq10" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/querybuilder/unsettled receipts query.png" title="Unsettled Receipts Query">
                                         <img class="img-responsive imgmargin" src="faqimages/querybuilder/thumb/unsettled receipts query.png" alt="Query Builder on gadgets">
@@ -780,9 +781,9 @@ layout: default
 
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/unsettled receipts.png" title="Unsettled Receipts Gadgets">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/unsettled receipts.png">
@@ -804,9 +805,9 @@ layout: default
                                         - Finally click on save changes button.
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/unsettled receipts gadget.png" title="Unsettled Receipts Gadgets">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/unsettled receipts gadget.png">
@@ -822,21 +823,21 @@ layout: default
                                         - All Gadgets which are created previously shown here on personal gadgets page.<br>
                                     </p>
                                 </div>
-                        </div>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card mb-2">
-                <div class="card-header" id="faq11h">
-                    <h5 class="mb-0">
-                        <a data-toggle="collapse" href="#faq11" class="faq-question">How to get ‘GSTN clients list without Return service’ in Personal Gadgets ?</a>
-                    </h5>
-                </div>
-                <div id="faq11" class="collapse" aria-labelledby="faq11" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class="row">
+                <div class="card mb-2">
+                    <div class="card-header" id="faq11h">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#faq11" class="faq-question">How to get ‘GSTN clients list without Return service’ in Personal Gadgets ?</a>
+                        </h5>
+                    </div>
+                    <div id="faq11" class="collapse" aria-labelledby="faq11" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/querybuilder/GSTN clients without return service QB.png" title="GSTN Clients">
                                         <img class="img-responsive imgmargin" src="faqimages/querybuilder/thumb/GSTN clients without return service QB.png" alt="Query Builder on gadgets">
@@ -862,9 +863,9 @@ layout: default
 
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/GSTN Clients list without Return service PG.png" title="GSTN Clients list without Return service">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/GSTN Clients list without Return service PG.png">
@@ -886,9 +887,9 @@ layout: default
 
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/GSTN Client PG.png" title="GSTN Clients">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/GSTN Client PG.png">
@@ -905,21 +906,21 @@ layout: default
 
                                     </p>
                                 </div>
-                        </div>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card mb-2">
-                <div class="card-header" id="faq12h">
-                    <h5 class="mb-0">
-                        <a data-toggle="collapse" href="#faq12" class="faq-question">How to find 'Clients with wrong GSTN services' in Personal Gadgets ?</a>
-                    </h5>
-                </div>
-                <div id="faq12" class="collapse" aria-labelledby="faq12" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class="row">
+                <div class="card mb-2">
+                    <div class="card-header" id="faq12h">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#faq12" class="faq-question">How to find 'Clients with wrong GSTN services' in Personal Gadgets ?</a>
+                        </h5>
+                    </div>
+                    <div id="faq12" class="collapse" aria-labelledby="faq12" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/querybuilder/Clients with wrong GSTN services.png" title="Clients with wrong GSTN services">
                                         <img class="img-responsive imgmargin" src="faqimages/querybuilder/thumb/Clients with wrong GSTN services.png" alt="Query Builder on gadgets">
@@ -944,9 +945,9 @@ layout: default
 
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/Clients with wrong GSTN  services Gadgets.png" title="GSTN Clients service error">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/Clients with wrong GSTN  services Gadgets.png">
@@ -967,9 +968,9 @@ layout: default
                                         - Finally click on save changes button.
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/Clients with wrong GSTN services PG.png" title="Clients with wrong GSTN service">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/Clients with wrong GSTN services PG.png">
@@ -985,21 +986,21 @@ layout: default
                                         - All Gadgets which are created previously shown here on personal gadgets page.
                                     </p>
                                 </div>
-                        </div>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card mb-2">
-                <div class="card-header" id="faq13h">
-                    <h5 class="mb-0">
-                        <a data-toggle="collapse" href="#faq13" class="faq-question">How to find ‘Unbilled GSTR 4 Projects’ in Personal Gadgets ?</a>
-                    </h5>
-                </div>
-                <div id="faq13" class="collapse" aria-labelledby="faq13" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class="row">
+                <div class="card mb-2">
+                    <div class="card-header" id="faq13h">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#faq13" class="faq-question">How to find ‘Unbilled GSTR 4 Projects’ in Personal Gadgets ?</a>
+                        </h5>
+                    </div>
+                    <div id="faq13" class="collapse" aria-labelledby="faq13" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/querybuilder/unbilled gstr4 projects.png" title="Unbilled GSTR 4 Projects">
                                         <img class="img-responsive imgmargin" src="faqimages/querybuilder/thumb/unbilled gstr4 projects.png" alt="Query Builder on gadgets">
@@ -1022,9 +1023,9 @@ layout: default
                                         - You can use this query anywhere. We use it in Personal Gadgets.
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/unbilled gstr 4 project PG edit.png" title="Unbilled GSTR 4 Project">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/unbilled gstr 4 project PG edit.png">
@@ -1046,9 +1047,9 @@ layout: default
                                         - Finally click on save changes button.
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/unbilled gstr4 projects PG.png" title="Unbilled GSTR 4 Project">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/unbilled gstr4 projects PG.png">
@@ -1064,21 +1065,21 @@ layout: default
                                         - All Gadgets which are created previously shown here on personal gadgets page.
                                     </p>
                                 </div>
-                        </div>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card mb-2">
-                <div class="card-header" id="faq14h">
-                    <h5 class="mb-0">
-                        <a data-toggle="collapse" href="#faq14" class="faq-question">How to find ‘GSTN Clients which ITR is pending’ in Personal Gadgets ?</a>
-                    </h5>
-                </div>
-                <div id="faq14" class="collapse" aria-labelledby="faq14" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class="row">
+                <div class="card mb-2">
+                    <div class="card-header" id="faq14h">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#faq14" class="faq-question">How to find ‘GSTN Clients which ITR is pending’ in Personal Gadgets ?</a>
+                        </h5>
+                    </div>
+                    <div id="faq14" class="collapse" aria-labelledby="faq14" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/querybuilder/GSTN Clients with ITR service pending.png" title="GSTN Clients with ITR Service pending Query">
                                         <img class="img-responsive imgmargin" src="faqimages/querybuilder/thumb/GSTN Clients with ITR service pending.png" alt="Query Builder on gadgets">
@@ -1105,9 +1106,9 @@ layout: default
 
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/GSTN Clients which ITR is pending PG.png" title="GSTN Clients which ITR is pending Gadgets">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/GSTN Clients which ITR is pending PG.png">
@@ -1128,9 +1129,9 @@ layout: default
                                         - Finally click on save changes button.
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/GSTN Clients which ITR is pending gadgets.png" title="GSTN Clients which ITR is pending Gadget">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/GSTN Clients which ITR is pending gadgets.png">
@@ -1146,21 +1147,21 @@ layout: default
                                         - All Gadgets which are created previously shown here on personal gadgets page.
                                     </p>
                                 </div>
-                        </div>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card mb-2">
-                <div class="card-header" id="faq15h">
-                    <h5 class="mb-0">
-                        <a data-toggle="collapse" href="#faq15" class="faq-question">How to get 'New Clients Projects which ITR is pending' in Personal Gadgets ?</a>
-                    </h5>
-                </div>
-                <div id="faq15" class="collapse" aria-labelledby="faq15" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class="row">
+                <div class="card mb-2">
+                    <div class="card-header" id="faq15h">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#faq15" class="faq-question">How to get 'New Clients Projects which ITR is pending' in Personal Gadgets ?</a>
+                        </h5>
+                    </div>
+                    <div id="faq15" class="collapse" aria-labelledby="faq15" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/querybuilder/new clients itr pending.png" title="New Clients with ITR Service pending Query">
                                         <img class="img-responsive imgmargin" src="faqimages/querybuilder/thumb/new clients itr pending.png" alt="Query Builder on gadgets">
@@ -1183,9 +1184,9 @@ layout: default
 
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/New Clients Projects for pending ITR service Gadget.png" title="New Clients which ITR is pending Gadgets">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/New Clients Projects for pending ITR service Gadget.png">
@@ -1206,9 +1207,9 @@ layout: default
                                         - Finally click on save changes button.
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/New Clients Projects for pending ITR service pg.png" title="New Clients which ITR is pending Gadget">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/New Clients Projects for pending ITR service pg.png">
@@ -1224,21 +1225,21 @@ layout: default
                                         - All Gadgets which are created previously shown here on personal gadgets page.
                                     </p>
                                 </div>
-                        </div>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card mb-2">
-                <div class="card-header" id="faq16h">
-                    <h5 class="mb-0">
-                        <a data-toggle="collapse" href="#faq16" class="faq-question">How to get 'Pending work or projects of particular staff' in Personal Gadgets ?</a>
-                    </h5>
-                </div>
-                <div id="faq16" class="collapse" aria-labelledby="faq16" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class="row">
+                <div class="card mb-2">
+                    <div class="card-header" id="faq16h">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#faq16" class="faq-question">How to get 'Pending work or projects of particular staff' in Personal Gadgets ?</a>
+                        </h5>
+                    </div>
+                    <div id="faq16" class="collapse" aria-labelledby="faq16" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/querybuilder/Pending Projects of Mr Robin.png" title="Pending Projects of Mr Robin">
                                         <img class="img-responsive imgmargin" src="faqimages/querybuilder/thumb/Pending Projects of Mr Robin.png" alt="Query Builder on gadgets">
@@ -1261,9 +1262,9 @@ layout: default
                                         Note :- Put your staff name in place of Mr Robin.
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/Pending Projects of Mr Robin PG edit.png" title="Pending Projects of Mr Robin">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/Pending Projects of Mr Robin PG edit.png">
@@ -1284,9 +1285,9 @@ layout: default
                                         - Finally click on save changes button.
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/Pending Projects of Mr Robin PG.png" title="Pending Projects of Mr Robin">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/Pending Projects of Mr Robin PG.png">
@@ -1302,21 +1303,21 @@ layout: default
                                         - All Gadgets which are created previously shown here on personal gadgets page.
                                     </p>
                                 </div>
-                        </div>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card mb-2">
-                <div class="card-header" id="faq17h">
-                    <h5 class="mb-0">
-                        <a data-toggle="collapse" href="#faq17" class="faq-question">How to find 'Project Status or Project Stages' in Personal Gadgets ?</a>
-                    </h5>
-                </div>
-                <div id="faq17" class="collapse" aria-labelledby="faq17" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class="row">
+                <div class="card mb-2">
+                    <div class="card-header" id="faq17h">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#faq17" class="faq-question">How to find 'Project Status or Project Stages' in Personal Gadgets ?</a>
+                        </h5>
+                    </div>
+                    <div id="faq17" class="collapse" aria-labelledby="faq17" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/querybuilder/in progress query.png" title="Projects In Progress">
                                         <img class="img-responsive imgmargin" src="faqimages/querybuilder/thumb/in progress query.png" alt="Query Builder on gadgets">
@@ -1334,9 +1335,9 @@ layout: default
                                         - Save this query for future use.
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/In Progress gadget.png" title="Projects In Progress">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/In Progress gadget.png">
@@ -1357,9 +1358,9 @@ layout: default
                                         - Finally click on save changes button.
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/in progress PG.png" title="Projects In Progress">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/in progress PG.png">
@@ -1375,21 +1376,21 @@ layout: default
                                         - All Gadgets which are created previously shown here on personal gadgets page.
                                     </p>
                                 </div>
-                        </div>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card mb-2">
-                <div class="card-header" id="faq18h">
-                    <h5 class="mb-0">
-                        <a data-toggle="collapse" href="#faq18" class="faq-question">How to get those 'Companies which attached Services count is Zero' in Personal Gadgets ?</a>
-                    </h5>
-                </div>
-                <div id="faq18" class="collapse" aria-labelledby="faq18" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class="row">
+                <div class="card mb-2">
+                    <div class="card-header" id="faq18h">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#faq18" class="faq-question">How to get those 'Companies which attached Services count is Zero' in Personal Gadgets ?</a>
+                        </h5>
+                    </div>
+                    <div id="faq18" class="collapse" aria-labelledby="faq18" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/querybuilder/company service attach count is zero.png" title="Companies without Services">
                                         <img class="img-responsive imgmargin" src="faqimages/querybuilder/thumb/company service attach count is zero.png" alt="Query Builder on gadgets">
@@ -1407,9 +1408,9 @@ layout: default
                                         - Save this query for future use.
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/companies without service gadget.png" title="Companies without Service Gadget">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/companies without service gadget.png">
@@ -1430,9 +1431,9 @@ layout: default
                                         - Finally click on save changes button.
                                     </p>
                                 </div>
-                        </div>
-                        <hr>
-                        <div class="row">
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <a class="fancybox-buttons" href="faqimages/gadgets/companies without service pg.png" title="Companies without Service">
                                         <img class="img-responsive imgmargin" src="faqimages/gadgets/thumb/companies without service pg.png">
@@ -1448,12 +1449,13 @@ layout: default
                                         - All Gadgets which are created previously shown here on personal gadgets page.
                                     </p>
                                 </div>
-                        </div>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 </div>
