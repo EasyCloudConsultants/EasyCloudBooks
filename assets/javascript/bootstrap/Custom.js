@@ -8,10 +8,9 @@ $(document).ready(function () {
 
    $("#main-menu").click(function () {
       
-       
         var navbarHeigh = $('#main-menu').height();
        var wrapperHeigh = $('#collapsibleNavbar').height();
-       var heightadd = navbarHeigh + 165;
+       var heightadd = wrapperHeigh + 165;
    
         if (navbarHeigh > wrapperHeigh) {
             $('#main-menu').css("min-height", heightadd + "px");
