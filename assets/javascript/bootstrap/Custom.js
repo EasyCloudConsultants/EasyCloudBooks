@@ -1,14 +1,7 @@
 $(document).ready(function () {
   
-    var url = location.href;
-    $('.main-menu li').find('a[href="' + url + '"]').parents('li').addClass('active');
-    $.each($('.main-menu li').find('a[href="' + url + '"]').parents('li').find('ul'), function (e, element) {
-        $(element).addClass('show');
-       
-       
-    });
- 
     heightadd();
+
     $("#main-menu").click(function () {
 
         heightadd();
@@ -16,11 +9,11 @@ $(document).ready(function () {
        
     });
 
-    //$(window).bind("load resize scroll", function () {
+    $(window).bind("load resize hover scroll", function () {
 
-    //    heightadd();
+       heightadd();
            
-    //});
+   });
    
   
 });
@@ -29,10 +22,24 @@ function heightadd() {
 
     var heightview = "";
 
-    $.each($('.main-menu li a').parents('li').find('ul'), function (e, element) {
+    var url = location.href;
+    $('.main-menu li').find('a[href="' + url + '"]').parents('li').addClass('active');
 
-        heightview = $(element).height();
-        alert(heightview);
+    $.each($('.main-menu li a').parents('li').find('ul'), function (e, element) {
+        $(element).removeClass('show');
+    });
+
+    $.each($('.main-menu li').find('a').parents('li').find('ul'), function (e, element) {
+        $(element).click(function () {
+
+            heightview = $(this).height();
+            alert(heightview);
+        });
+
+    });
+
+    $.each($('.main-menu li a').parents('li').find('ul'), function (e, element) {
+        $(element).removeClass('show');
     });
     var navbarHeigh = $('#main-menu').height();
     var wrapperHeigh = $('#collapsibleNavbar').height();
