@@ -1,4 +1,4 @@
-                  <script>
+                 
                                     $(function () {
 
                                         var qn = urlQueryString["qn"];
@@ -48,4 +48,4 @@
 
                                         $('div.dataTables_paginate').closest('div.row').css('margin-top', '30px');
                                     });
-                                </script>
+                                
