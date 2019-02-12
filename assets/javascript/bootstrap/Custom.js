@@ -31,9 +31,13 @@ function heightadd() {
     var heightview = "";
 
 
-    $.each($('.main-menu li a').parents('li').find('ul'), function (e, element) {
+    $.each($('.main-menu li a').parents('li'), function (e, element) {
         $(element).click(function () {
-            heightview = $(this).height();
+
+            heightview = $(this).children('ul').height();
+            alert(heightview);
+        
+           
         });
 
     });
