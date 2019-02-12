@@ -19,8 +19,8 @@ $(document).ready(function () {
                 heightview = $(this).children('ul').height();
 
                 var navbarHeigh = $('#main-menu').height();
-                //    var wrapperHeigh = $('#collapsibleNavbar').height();
-                var heightadd = navbarHeigh + heightview;
+             var wrapperHeigh = $('#collapsibleNavbar').height();
+                var heightadd = wrapperHeigh + heightview;
 
 
                 if (heightadd > navbarHeigh) {
@@ -35,8 +35,8 @@ $(document).ready(function () {
             }.click(function () {
                 heightview  = $(this).children('ul').height();
                 var navbarHeigh = $('#main-menu').height();
-            //    var wrapperHeigh = $('#collapsibleNavbar').height();
-                var heightadd = navbarHeigh + heightview;
+                 var wrapperHeigh = $('#collapsibleNavbar').height();
+                var heightadd = wrapperHeigh + heightview;
 
 
                 if (heightadd > navbarHeigh) {
@@ -52,8 +52,8 @@ $(document).ready(function () {
 
         });
         var navbarHeigh = $('#main-menu').height();
-       // var wrapperHeigh = $('#collapsibleNavbar').height();
-        var heightadd = navbarHeigh + heightview;
+         var wrapperHeigh = $('#collapsibleNavbar').height();
+        var heightadd = wrapperHeigh + heightview;
 
 
         if (heightadd > navbarHeigh) {
