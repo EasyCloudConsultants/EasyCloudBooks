@@ -18,7 +18,7 @@ $(document).ready(function () {
         $.each($('.main-menu li a').parents('li'), function (e, element) {
             $(element).click(function () {
 
-               // heightview = $(this).children('ul').height();
+                heightview = $(this).children('ul').height();
 
                 heightadd();
             });
@@ -31,7 +31,7 @@ $(document).ready(function () {
 
         var navbarHeigh = $('#main-menu').height();
         var wrapperHeigh = $('#collapsibleNavbar').height();
-        var heightadd = wrapperHeigh + 100;
+        var heightadd = wrapperHeigh + heightview;
 
 
         if (heightadd > navbarHeigh) {
