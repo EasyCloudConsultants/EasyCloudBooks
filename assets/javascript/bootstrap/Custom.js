@@ -8,41 +8,23 @@ $(document).ready(function () {
         $(element).addClass('show');
     });
 
-    heightadd();
+    
 
-    $("#main-menu").click(function () {
+   // $(window).bind("load resize scroll", function () {
 
-        heightadd();
-
-       
-    });
-
-    $(window).bind("load resize scroll", function () {
-
-       heightadd();
+   //    heightadd();
            
-   });
-   
-  
-});
-
-function heightadd() {
-
-    var heightview = "";
-
-
+   //});
     $.each($('.main-menu li a').parents('li'), function (e, element) {
         $(element).click(function () {
 
             heightview = $(this).children('ul').height();
-            alert(heightview);
-        
-           
+         
+
+
         });
 
     });
-
-   
     var navbarHeigh = $('#main-menu').height();
     var wrapperHeigh = $('#collapsibleNavbar').height();
     var heightadd = wrapperHeigh + heightview;
@@ -54,7 +36,15 @@ function heightadd() {
     }
     if (navbarHeigh > heightadd) {
         $('#main-menu').css("min-height", $(window).height() + "px");
-     
+
 
     }
-}
+  
+});
+
+
+
+
+   
+
+   
