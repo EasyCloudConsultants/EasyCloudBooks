@@ -1,5 +1,15 @@
 $(document).ready(function () {
-  
+
+    var url = location.href;
+    $('.main-menu li').find('a[href="' + url + '"]').parents('li').addClass('active');
+
+    $.each($('.main-menu li').parents('li').find('ul'), function (e, element) {
+        $(element).removeClass('show');
+    });
+    $.each($('.main-menu li a').find('a[href="' + url + '"]').parents('li').find('ul'), function (e, element) {
+        $(element).addClass('show');
+    });
+
     heightadd();
 
     $("#main-menu").click(function () {
@@ -22,12 +32,6 @@ function heightadd() {
 
     var heightview = "";
 
-    var url = location.href;
-    $('.main-menu li').find('a[href="' + url + '"]').parents('li').addClass('active');
-
-    $.each($('.main-menu li').parents('li').find('ul'), function (e, element) {
-        $(element).removeClass('show');
-    });
 
     $.each($('.main-menu li').find('a').parents('li').find('ul'), function (e, element) {
         $(element).click(function () {
@@ -38,9 +42,7 @@ function heightadd() {
 
     });
 
-    $.each($('.main-menu li a').find('a[href="' + url + '"]').parents('li').find('ul'), function (e, element) {
-        $(element).addClass('show');
-    });
+   
     var navbarHeigh = $('#main-menu').height();
     var wrapperHeigh = $('#collapsibleNavbar').height();
     var heightadd = wrapperHeigh + heightview;
