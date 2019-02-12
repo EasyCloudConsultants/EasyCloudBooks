@@ -21,6 +21,14 @@ $(document).ready(function () {
                 heightview = $(this).children('ul').height();
 
                 heightadd();
+            }, function () {
+                var heightremove = "";
+
+                heightremove = $(this).children('ul').height();
+
+                heightview = "'"+ - +"" + heightremove + "'";
+
+                heightadd();
             });
 
         });
