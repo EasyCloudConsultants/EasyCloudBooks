@@ -1,10 +1,12 @@
 $(document).ready(function () {
+    var heightview ="";
     var url = location.href;
     $('.main-menu li').find('a[href="' + url + '"]').parents('li').addClass('active');
     $.each($('.main-menu li').find('a[href="' + url + '"]').parents('li').find('ul'), function (e, element) {
-        $(element).addClass('show');
+        heightview = $(element).addClass('show');
+        alert(heightview);
     });
-
+ 
     heightadd();
     $("#main-menu").click(function () {
 
@@ -26,7 +28,8 @@ function heightadd() {
 
     var navbarHeigh = $('#main-menu').height();
     var wrapperHeigh = $('#collapsibleNavbar').height();
-    var heightadd = wrapperHeigh + 150;
+    var heightadd = wrapperHeigh + heightview;
+    alert(heightview);
 
     if (heightadd > navbarHeigh) {
         $('#main-menu').css("min-height", heightadd + "px");
