@@ -44,7 +44,7 @@ function heightadd() {
     var navbarHeigh = $('#main-menu').height();
     var wrapperHeigh = $('#collapsibleNavbar').height();
     var heightadd = wrapperHeigh + heightview;
-    alert(heightview);
+    //alert(heightview);
 
     if (heightadd > navbarHeigh) {
         $('#main-menu').css("min-height", heightadd + "px");
