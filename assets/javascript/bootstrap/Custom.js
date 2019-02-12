@@ -5,26 +5,34 @@ $(document).ready(function () {
         $(element).addClass('show');
     });
 
-   
 
+    $("#main-menu").click(function () {
+
+        heightadd();
+    });
 
     $(window).bind("load resize scroll", function () {
 
-            var navbarHeigh = $('#main-menu').height();
-            var wrapperHeigh = $('#collapsibleNavbar').height();
-            var heightadd = wrapperHeigh + 100;
+        heightadd();
            
-            if (wrapperHeigh > navbarHeigh) {
-                $('#main-menu').css("min-height", heightadd + "px");
-             
-            }
-            if (navbarHeigh > wrapperHeigh) {
-                $('#main-menu').css("min-height", $(window).height() + "px");
-                alert("holle");
-
-            }
     });
    
   
 });
 
+function heightadd() {
+
+    var navbarHeigh = $('#main-menu').height();
+    var wrapperHeigh = $('#collapsibleNavbar').height();
+    var heightadd = wrapperHeigh + 150;
+
+    if (heightadd > navbarHeigh) {
+        $('#main-menu').css("min-height", heightadd + "px");
+
+    }
+    if (navbarHeigh > heightadd) {
+        $('#main-menu').css("min-height", $(window).height() + "px");
+     
+
+    }
+}
