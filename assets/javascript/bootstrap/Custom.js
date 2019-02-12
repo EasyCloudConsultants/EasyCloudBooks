@@ -15,13 +15,13 @@ $(document).ready(function () {
    //    heightadd();
            
    //});
+    var heightview = "";
+
     $.each($('.main-menu li a').parents('li'), function (e, element) {
         $(element).click(function () {
 
             heightview = $(this).children('ul').height();
          
-
-
         });
 
     });
