@@ -19,8 +19,8 @@ $(document).ready(function () {
                 heightview = $(this).children('ul').height();
 
                 var navbarHeigh = $('#main-menu').height();
-                var wrapperHeigh = $('#collapsibleNavbar').height();
-                var heightadd = wrapperHeigh + heightview;
+            //    var wrapperHeigh = $('#collapsibleNavbar').height();
+                var heightadd = navbarHeigh + heightview;
 
 
                 if (heightadd > navbarHeigh) {
@@ -29,14 +29,15 @@ $(document).ready(function () {
                 }
                 if (navbarHeigh > heightadd) {
                     $('#main-menu').css("min-height", $(window).height() + "px");
+                    alert("hello");
 
                 }
             });
 
         });
         var navbarHeigh = $('#main-menu').height();
-        var wrapperHeigh = $('#collapsibleNavbar').height();
-        var heightadd = wrapperHeigh + heightview;
+       // var wrapperHeigh = $('#collapsibleNavbar').height();
+        var heightadd = navbarHeigh + heightview;
 
 
         if (heightadd > navbarHeigh) {
