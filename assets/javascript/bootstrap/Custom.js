@@ -32,7 +32,7 @@ $(document).ready(function () {
                     alert("hello");
 
                 }
-            }.click(function () {
+            }, function () {
                 heightview  = $(this).children('ul').height();
                 var navbarHeigh = $('#main-menu').height();
                  var wrapperHeigh = $('#collapsibleNavbar').height();
@@ -48,7 +48,7 @@ $(document).ready(function () {
                     alert("hello");
 
                 }
-            }));
+            });
 
         });
         var navbarHeigh = $('#main-menu').height();
