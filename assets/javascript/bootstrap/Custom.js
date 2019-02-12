@@ -12,9 +12,9 @@ $(document).ready(function () {
 
     if ($(window).width() > 767) {
 
-        $(window).on("load scroll resize", function (e) {
-            heightadd();
-        });
+        //$(window).on("load scroll resize", function (e) {
+        //    heightadd();
+        //});
         $.each($('.main-menu li a').parents('li'), function (e, element) {
             $(element).click(function () {
 
