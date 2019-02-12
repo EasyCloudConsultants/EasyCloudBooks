@@ -9,6 +9,7 @@ $(document).ready(function () {
     $("#main-menu").click(function () {
 
         heightadd();
+        alert("heloo");
     });
 
     $(window).bind("load resize scroll", function () {
