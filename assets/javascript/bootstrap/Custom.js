@@ -8,13 +8,7 @@ $(document).ready(function () {
         $(element).addClass('show');
     });
 
-    checkPosition();
-   
-});
 
-$(document).on('load', $(window).bind("resize", checkPosition()));
-
-function checkPosition() {
     if ($(window).width() > 767) {
 
         var heightview = "";
@@ -27,7 +21,7 @@ function checkPosition() {
                 var navbarHeigh = $('#main-menu').height();
                 var wrapperHeigh = $('#collapsibleNavbar').height();
                 var heightadd = wrapperHeigh + heightview;
-               
+
 
                 if (heightadd > navbarHeigh) {
                     $('#main-menu').css("min-height", heightadd + "px");
@@ -43,7 +37,7 @@ function checkPosition() {
         var navbarHeigh = $('#main-menu').height();
         var wrapperHeigh = $('#collapsibleNavbar').height();
         var heightadd = wrapperHeigh + heightview;
-       
+
 
         if (heightadd > navbarHeigh) {
             $('#main-menu').css("min-height", heightadd + "px");
@@ -56,6 +50,11 @@ function checkPosition() {
 
 
     }
-}
+   
+});
+
+
+   
+
 
    
