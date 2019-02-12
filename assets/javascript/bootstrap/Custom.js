@@ -9,14 +9,15 @@ $(document).ready(function () {
     $("#main-menu").click(function () {
 
         heightadd();
+
        
     });
 
-    $(window).bind("load resize scroll", function () {
+    //$(window).bind("load resize scroll", function () {
 
-        heightadd();
+    //    heightadd();
            
-    });
+    //});
    
   
 });
@@ -25,7 +26,7 @@ function heightadd() {
 
     var navbarHeigh = $('#main-menu').height();
     var wrapperHeigh = $('#collapsibleNavbar').height();
-    var heightadd = wrapperHeigh + 30;
+    var heightadd = wrapperHeigh + 150;
 
     if (heightadd > navbarHeigh) {
         $('#main-menu').css("min-height", heightadd + "px");
