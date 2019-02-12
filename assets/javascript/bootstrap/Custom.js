@@ -8,51 +8,31 @@ $(document).ready(function () {
         $(element).addClass('show');
     });
 
+    var heightview = "";
 
     if ($(window).width() > 767) {
 
-        var heightview = "";
+      
+        heightadd();
 
         $.each($('.main-menu li a').parents('li'), function (e, element) {
             $(element).click(function () {
 
                 heightview = $(this).children('ul').height();
 
-                var navbarHeigh = $('#main-menu').height();
-             var wrapperHeigh = $('#collapsibleNavbar').height();
-                var heightadd = wrapperHeigh + heightview;
-
-
-                if (heightadd > navbarHeigh) {
-                    $('#main-menu').css("min-height", heightadd + "px");
-
-                }
-                if (navbarHeigh > heightadd) {
-                    $('#main-menu').css("min-height", $(window).height() + "px");
-                    alert("hello");
-
-                }
-            }, function () {
-                heightview  = $(this).children('ul').height();
-                var navbarHeigh = $('#main-menu').height();
-                 var wrapperHeigh = $('#collapsibleNavbar').height();
-                var heightadd = wrapperHeigh + heightview;
-
-
-                if (heightadd > navbarHeigh) {
-                    $('#main-menu').css("min-height", heightadd + "px");
-
-                }
-                if (navbarHeigh > heightadd) {
-                    $('#main-menu').css("min-height", $(window).height() + "px");
-                    alert("hello");
-
-                }
+                heightadd();
             });
 
         });
+
+        
+
+    }
+
+    function heightadd() {
+
         var navbarHeigh = $('#main-menu').height();
-         var wrapperHeigh = $('#collapsibleNavbar').height();
+        var wrapperHeigh = $('#collapsibleNavbar').height();
         var heightadd = wrapperHeigh + heightview;
 
 
@@ -61,13 +41,10 @@ $(document).ready(function () {
 
         }
         if (navbarHeigh > heightadd) {
-            $('#main-menu').css("min-height", $(window).height() + "px");
+            $('#main-menu').css("min-height", heightadd + "px");
 
         }
-
-
     }
-   
 });
 
 
