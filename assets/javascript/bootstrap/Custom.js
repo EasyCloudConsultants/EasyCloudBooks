@@ -41,7 +41,7 @@ $(document).ready(function () {
         }
         if (navbarHeigh > heightadd) {
             $('#main-menu').css("min-height", heightadd + "px");
-            heightadd();
+            
         }
     }
 });
