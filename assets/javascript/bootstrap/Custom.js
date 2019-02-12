@@ -21,7 +21,21 @@ $(document).ready(function () {
         $(element).click(function () {
 
             heightview = $(this).children('ul').height();
-         
+
+            var navbarHeigh = $('#main-menu').height();
+            var wrapperHeigh = $('#collapsibleNavbar').height();
+            var heightadd = wrapperHeigh + heightview;
+            //alert(heightview);
+
+            if (heightadd > navbarHeigh) {
+                $('#main-menu').css("min-height", heightadd + "px");
+
+            }
+            if (navbarHeigh > heightadd) {
+                $('#main-menu').css("min-height", $(window).height() + "px");
+
+
+            }
         });
 
     });
