@@ -8,13 +8,7 @@ $(document).ready(function () {
         $(element).addClass('show');
     });
 
-    
-
-   // $(window).bind("load resize scroll", function () {
-
-   //    heightadd();
-           
-   //});
+    checkPosition();
    
 });
 
@@ -33,7 +27,7 @@ function checkPosition() {
                 var navbarHeigh = $('#main-menu').height();
                 var wrapperHeigh = $('#collapsibleNavbar').height();
                 var heightadd = wrapperHeigh + heightview;
-                //alert(heightview);
+               
 
                 if (heightadd > navbarHeigh) {
                     $('#main-menu').css("min-height", heightadd + "px");
@@ -49,7 +43,7 @@ function checkPosition() {
         var navbarHeigh = $('#main-menu').height();
         var wrapperHeigh = $('#collapsibleNavbar').height();
         var heightadd = wrapperHeigh + heightview;
-        //alert(heightview);
+       
 
         if (heightadd > navbarHeigh) {
             $('#main-menu').css("min-height", heightadd + "px");
