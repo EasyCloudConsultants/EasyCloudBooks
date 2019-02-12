@@ -18,14 +18,12 @@ $(document).ready(function () {
         $.each($('.main-menu li a').parents('li'), function (e, element) {
             $(element).click(function () {
 
-                heightview = $(this).children('ul').height();
+               // heightview = $(this).children('ul').height();
 
                 heightadd();
             });
 
         });
-
-        
 
     }
 
