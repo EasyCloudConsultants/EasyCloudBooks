@@ -5,7 +5,7 @@ $(document).ready(function () {
         $(element).addClass('show');
     });
 
-
+    heightadd();
     $("#main-menu").click(function () {
 
         heightadd();
