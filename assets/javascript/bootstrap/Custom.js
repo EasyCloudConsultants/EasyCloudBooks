@@ -5,33 +5,25 @@ $(document).ready(function () {
         $(element).addClass('show');
     });
 
-    heightadd();
+   
 
 
     $(window).bind("load resize scroll", function () {
 
-        heightadd();
+            var navbarHeigh = $('#main-menu').height();
+            var wrapperHeigh = $('#collapsibleNavbar').height();
+            var heightadd = wrapperHeigh + 100;
+            alert(wrapperHeigh);
+            if (wrapperHeigh > navbarHeigh) {
+                $('#main-menu').css("min-height", heightadd + "px");
+                alert(heightadd);
+            }
+            if (navbarHeigh < wrapperHeigh) {
+                $('#main-menu').css("min-height", $(window).height() + "px");
 
+            }
     });
    
   
 });
 
-
-
-function heightadd()
-{
-    var navbarHeigh = $('#main-menu').height();
-    var wrapperHeigh = $('#collapsibleNavbar').height();
-    var heightadd = wrapperHeigh + 100;
-    alert(wrapperHeigh);
-    if (wrapperHeigh > navbarHeigh) {
-        $('#main-menu').css("min-height", heightadd + "px");
-        alert(heightadd);
-    }
-    if (navbarHeigh < wrapperHeigh) {
-        $('#main-menu').css("min-height", $(window).height() + "px");
-
-    }
-
-}
