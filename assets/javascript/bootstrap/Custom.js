@@ -1,11 +1,11 @@
 $(document).ready(function () {
-    var heightview = "";
+  
     var url = location.href;
     $('.main-menu li').find('a[href="' + url + '"]').parents('li').addClass('active');
     $.each($('.main-menu li').find('a[href="' + url + '"]').parents('li').find('ul'), function (e, element) {
         $(element).addClass('show');
-        heightview = $(element).height();
-        alert(heightview);
+       
+       
     });
  
     heightadd();
@@ -27,6 +27,13 @@ $(document).ready(function () {
 
 function heightadd() {
 
+    var heightview = "";
+
+    $.each($('.main-menu li').find('a[href="' + url + '"]').parents('li').find('ul'), function (e, element) {
+
+        heightview = $(element).height();
+        alert(heightview);
+    });
     var navbarHeigh = $('#main-menu').height();
     var wrapperHeigh = $('#collapsibleNavbar').height();
     var heightadd = wrapperHeigh + heightview;
