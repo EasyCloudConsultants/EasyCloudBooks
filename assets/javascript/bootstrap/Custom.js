@@ -19,6 +19,22 @@ $(document).ready(function () {
                 heightview = $(this).children('ul').height();
 
                 var navbarHeigh = $('#main-menu').height();
+                //    var wrapperHeigh = $('#collapsibleNavbar').height();
+                var heightadd = navbarHeigh + heightview;
+
+
+                if (heightadd > navbarHeigh) {
+                    $('#main-menu').css("min-height", heightadd + "px");
+
+                }
+                if (navbarHeigh > heightadd) {
+                    $('#main-menu').css("min-height", $(window).height() + "px");
+                    alert("hello");
+
+                }
+            }.click(function () {
+                heightview  = $(this).children('ul').height();
+                var navbarHeigh = $('#main-menu').height();
             //    var wrapperHeigh = $('#collapsibleNavbar').height();
                 var heightadd = navbarHeigh + heightview;
 
@@ -32,7 +48,7 @@ $(document).ready(function () {
                     alert("hello");
 
                 }
-            });
+            }));
 
         });
         var navbarHeigh = $('#main-menu').height();
