@@ -12,7 +12,7 @@ $(document).ready(function () {
        var wrapperHeigh = $('#collapsibleNavbar').height();
        var heightadd = wrapperHeigh + 165;
    
-        if (navbarHeigh > wrapperHeigh) {
+        if ( wrapperHeigh > navbarHeigh ) {
             $('#main-menu').css("min-height", heightadd + "px");
         }
         if (navbarHeigh < wrapperHeigh) {
