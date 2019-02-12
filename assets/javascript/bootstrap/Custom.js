@@ -9,8 +9,8 @@ $(document).ready(function () {
 
     $(window).bind("load resize scroll", function () {
        
-        heightadd;
-        alert("hello");
+        heightadd();
+  
     });
   
 });
@@ -19,7 +19,6 @@ $(document).ready(function () {
 
 function heightadd()
 {
-
     var navbarHeigh = $('#main-menu').height();
     var wrapperHeigh = $('#collapsibleNavbar').height();
     var heightadd = wrapperHeigh + 150;
