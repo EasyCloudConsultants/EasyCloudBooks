@@ -31,7 +31,7 @@ $(document).ready(function () {
 
         var navbarHeigh = $('#main-menu').height();
         var wrapperHeigh = $('#collapsibleNavbar').height();
-        var heightadd = wrapperHeigh + 60;
+        var heightadd = wrapperHeigh + 100;
 
 
         if (heightadd > navbarHeigh) {
