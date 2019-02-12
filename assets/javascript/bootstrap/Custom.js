@@ -10,9 +10,9 @@ $(document).ready(function () {
       
        
         var navbarHeigh = $('#main-menu').height();
-        var wrapperHeigh = $('.bd-content').height();
-        var heightadd = navbarHeigh + 165;
-        
+       var wrapperHeigh = $('collapsibleNavbar').height();
+       var heightadd = navbarHeigh + 165;
+   
         if (navbarHeigh > wrapperHeigh) {
             $('#main-menu').css("min-height", heightadd + "px");
         }
