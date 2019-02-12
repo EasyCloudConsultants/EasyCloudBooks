@@ -12,7 +12,7 @@ $(document).ready(function () {
    
 });
 
-$(document).load($(window).bind("resize", checkPosition()));
+$(document).on('load', $(window).bind("resize", checkPosition()));
 
 function checkPosition() {
     if ($(window).width() > 767) {
