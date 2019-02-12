@@ -29,7 +29,7 @@ function heightadd() {
 
     var heightview = "";
 
-    $.each($('.main-menu li').find('a[href="' + url + '"]').parents('li').find('ul'), function (e, element) {
+    $.each($('.main-menu li a').parents('li').find('ul'), function (e, element) {
 
         heightview = $(element).height();
         alert(heightview);
