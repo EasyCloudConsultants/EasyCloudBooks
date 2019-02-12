@@ -1,0 +1,357 @@
+---
+layout: default
+---
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="Home">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Custom Filter List</li>
+    </ol>
+</nav>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="ibox ">
+                <div class="ibox-content" style="padding: 15px;">
+                    <div class="row">
+                        <div class="col-md-12" style="display: table; width: 100%;">
+
+                            <div id="tableFilterParamer_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                                <div class="row"><div class="col-sm-6"><div class="dataTables_length" id="tableFilterParamer_length"><label>Show <select name="tableFilterParamer_length" aria-controls="tableFilterParamer" class="form-control input-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-6"><div id="tableFilterParamer_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control input-sm" placeholder="" aria-controls="tableFilterParamer"></label></div></div></div><div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="dataTables_scroll">
+                                            <div class="dataTables_scrollHead" style="overflow: hidden; position: relative; border: 0px none; width: 100%;">
+                                                <div class="dataTables_scrollHeadInner" style="box-sizing: content-box; width: 1071px; padding-right: 0px;">
+                                                    <table class="table table-condensed table-hover  dataTable no-footer" role="grid" style="margin-left: 0px; width: 1071px;">
+                                                        <thead>
+                                                            <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="tableFilterParamer" rowspan="1" colspan="1" style="width: 11px;" aria-sort="ascending" aria-label="#: activate to sort column descending">#</th><th class="sorting" tabindex="0" aria-controls="tableFilterParamer" rowspan="1" colspan="1" style="width: 219px;" aria-label="Parameter Name: activate to sort column ascending">Parameter Name</th><th class="sorting" tabindex="0" aria-controls="tableFilterParamer" rowspan="1" colspan="1" style="width: 183px;" aria-label="Group: activate to sort column ascending">Group</th><th class="sorting" tabindex="0" aria-controls="tableFilterParamer" rowspan="1" colspan="1" style="width: 546px;" aria-label="Description: activate to sort column ascending">Description</th></tr>
+                                                            <tr class="search" role="row"><th rowspan="1" colspan="1"></th><th rowspan="1" colspan="1"><input type="text" class="form-control" placeholder="Search Parameter Name" style="width:100%;"></th><th rowspan="1" colspan="1"><input type="text" class="form-control" placeholder="Search Group" style="width:100%;"></th><th rowspan="1" colspan="1"><input type="text" class="form-control" placeholder="Search Description" style="width:100%;"></th></tr>
+                                                        </thead>
+                                                    </table>
+                                                </div>
+                                            </div><div class="dataTables_scrollBody" style="position: relative; overflow: auto; width: 100%;">
+                                                <table class="table table-condensed table-hover  dataTable no-footer" id="tableFilterParamer" role="grid" aria-describedby="tableFilterParamer_info" style="width: 1071px;">
+                                                    <thead>
+                                                        <tr role="row" style="height: 0px;"><th class="sorting_asc" aria-controls="tableFilterParamer" rowspan="1" colspan="1" style="width: 11px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-sort="ascending" aria-label="#: activate to sort column descending"><div class="dataTables_sizing" style="height:0;overflow:hidden;">#</div></th><th class="sorting" aria-controls="tableFilterParamer" rowspan="1" colspan="1" style="width: 219px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Parameter Name: activate to sort column ascending"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Parameter Name</div></th><th class="sorting" aria-controls="tableFilterParamer" rowspan="1" colspan="1" style="width: 183px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Group: activate to sort column ascending"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Group</div></th><th class="sorting" aria-controls="tableFilterParamer" rowspan="1" colspan="1" style="width: 546px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Description: activate to sort column ascending"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Description</div></th></tr>
+                                                        <tr class="search" role="row" style="height: 0px;"><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 11px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;"></div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 219px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;"><input type="text" class="form-control" placeholder="Search Parameter Name" style="width:100%;"></div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 183px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;"><input type="text" class="form-control" placeholder="Search Group" style="width:100%;"></div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 546px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;"><input type="text" class="form-control" placeholder="Search Description" style="width:100%;"></div></th></tr>
+                                                    </thead>
+
+                                                    <tbody>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">1</td>
+                                                            <td>Account : Title</td>
+                                                            <td>Account</td>
+                                                            <td>Title of Account</td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">2</td>
+                                                            <td>Account : Description</td>
+                                                            <td>Account</td>
+                                                            <td>Description of Account</td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">3</td>
+                                                            <td>Account : UniqueId</td>
+                                                            <td>Account</td>
+                                                            <td>UniqueId of Account</td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">4</td>
+                                                            <td>Account : Type</td>
+                                                            <td>Account</td>
+                                                            <td>Type of Account</td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">5</td>
+                                                            <td>Account : Create Date</td>
+                                                            <td>Account</td>
+                                                            <td>Create Date of Account</td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">6</td>
+                                                            <td>Account : Reminder Date</td>
+                                                            <td>Account</td>
+                                                            <td>Reminder Date of Account</td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">7</td>
+                                                            <td>Account : Modify Date</td>
+                                                            <td>Account</td>
+                                                            <td>Modify Date of Account</td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">8</td>
+                                                            <td>Account : Close Date</td>
+                                                            <td>Account</td>
+                                                            <td>Close Date of Account</td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">9</td>
+                                                            <td>Account : Last Transaction Date</td>
+                                                            <td>Account</td>
+                                                            <td>Last Transaction Date of Account</td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">10</td>
+                                                            <td>Account : Total Price</td>
+                                                            <td>Account</td>
+                                                            <td>Total Price of Account</td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">11</td>
+                                                            <td>Account : Total Discount</td>
+                                                            <td>Account</td>
+                                                            <td>Total Discount of Account</td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">12</td>
+                                                            <td>Account : Total Tax</td>
+                                                            <td>Account</td>
+                                                            <td>Total Tax of Account</td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">13</td>
+                                                            <td>Account : Balance</td>
+                                                            <td>Account</td>
+                                                            <td>Balance of Account</td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">14</td>
+                                                            <td>Account : Credit</td>
+                                                            <td>Account</td>
+                                                            <td>Credit of Account</td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">15</td>
+                                                            <td>Account : Debit</td>
+                                                            <td>Account</td>
+                                                            <td>Debit of Account</td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">16</td>
+                                                            <td>Account : Project Count</td>
+                                                            <td>Account</td>
+                                                            <td>Project Count of Account</td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">17</td>
+                                                            <td>Account : Manager Count</td>
+                                                            <td>Account</td>
+                                                            <td>Manager Count of Account</td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">18</td>
+                                                            <td>Account : Tax Count</td>
+                                                            <td>Account</td>
+                                                            <td>Tax Count of Account</td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">19</td>
+                                                            <td>Account : Favorite</td>
+                                                            <td>Account</td>
+                                                            <td>Favorite selection of Account list</td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">20</td>
+                                                            <td>Account : Closed</td>
+                                                            <td>Account</td>
+                                                            <td>Display closed account</td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">21</td>
+                                                            <td>Account : Tag</td>
+                                                            <td>Account</td>
+                                                            <td>Display Tag in account page</td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">22</td>
+                                                            <td>Account : Tag Count</td>
+                                                            <td>Account</td>
+                                                            <td>Display Tag count in account page</td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">23</td>
+                                                            <td>Account Member : Create Date</td>
+                                                            <td>Account Member</td>
+                                                            <td>Account member create date is on which member assign to account </td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">24</td>
+                                                            <td>Account Member : Search</td>
+                                                            <td>Account Member</td>
+                                                            <td>Search account member by name</td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">25</td>
+                                                            <td>Account Settlement : Create Date</td>
+                                                            <td>Account Settlement</td>
+                                                            <td>Create date of settled account </td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">26</td>
+                                                            <td>Account Settlement : Description</td>
+                                                            <td>Account Settlement</td>
+                                                            <td>Description of settled account</td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">27</td>
+                                                            <td>Account Settlement : Discount</td>
+                                                            <td>Account Settlement</td>
+                                                            <td>Discount of settled account</td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">28</td>
+                                                            <td>Account Settlement : Net Settlement</td>
+                                                            <td>Account Settlement</td>
+                                                            <td>Net Settlement of settled account</td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">29</td>
+                                                            <td>Account Settlement : Total</td>
+                                                            <td>Account Settlement</td>
+                                                            <td>Total amount of settled account</td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">30</td>
+                                                            <td>Account Settlement : Price</td>
+                                                            <td>Account Settlement</td>
+                                                            <td>Price of settled account </td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">31</td>
+                                                            <td>Account Settlement : Project Count</td>
+                                                            <td>Account Settlement</td>
+                                                            <td>Project Count of settled account</td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">32</td>
+                                                            <td>Account Settlement : Tax</td>
+                                                            <td>Account Settlement</td>
+                                                            <td>Tax of settled account </td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">33</td>
+                                                            <td>Account Settlement : Transaction Count</td>
+                                                            <td>Account Settlement</td>
+                                                            <td>Transaction Count of settled account</td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">34</td>
+                                                            <td>Account Settlement : UniqueId</td>
+                                                            <td>Account Settlement</td>
+                                                            <td>UniqueId of settled account</td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">35</td>
+                                                            <td>Account Statement Tax : Amount</td>
+                                                            <td>Account Statement Tax Settings</td>
+                                                            <td>Tax amount of account statement in tax settings page</td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">36</td>
+                                                            <td>Account Statement Tax : Create Date</td>
+                                                            <td>Account Statement Tax Settings</td>
+                                                            <td>Tax create date of account statement in tax settings page</td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">37</td>
+                                                            <td>Account Statement Tax : Description</td>
+                                                            <td>Account Statement Tax Settings</td>
+                                                            <td>Tax description of account statement in tax settings page</td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">38</td>
+                                                            <td>Account Statement Tax : Name</td>
+                                                            <td>Account Statement Tax Settings</td>
+                                                            <td>Tax name of account statement in tax settings page</td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">39</td>
+                                                            <td>Account Statement Tax : Percentage</td>
+                                                            <td>Account Statement Tax Settings</td>
+                                                            <td>Tax percentage of account statement in tax settings page</td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">40</td>
+                                                            <td>Account Tag : Create Date</td>
+                                                            <td>Account Tag</td>
+                                                            <td>Creation date of account tag</td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">41</td>
+                                                            <td>Account Tag : Delete Date</td>
+                                                            <td>Account Tag</td>
+                                                            <td>Deletion date of account tag</td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">42</td>
+                                                            <td>Account Tag : Tag Value</td>
+                                                            <td>Account Tag</td>
+                                                            <td>Actual Value of account tag</td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">43</td>
+                                                            <td>Company : Account Open Count</td>
+                                                            <td>Company</td>
+                                                            <td>Number of account which are open state in company</td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">44</td>
+                                                            <td>Company : Address Count</td>
+                                                            <td>Company</td>
+                                                            <td>Number/count of addresses for company</td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">45</td>
+                                                            <td>Company : Badge</td>
+                                                            <td>Company</td>
+                                                            <td>Badge detail of company</td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">46</td>
+                                                            <td>Company : Contact Count</td>
+                                                            <td>Company</td>
+                                                            <td>Number of contacts which are attched to company</td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">47</td>
+                                                            <td>Company : Create Date</td>
+                                                            <td>Company</td>
+                                                            <td>Create date of company</td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">48</td>
+                                                            <td>Company : Date Count</td>
+                                                            <td>Company</td>
+                                                            <td>Total number of dates attached to company</td>
+                                                        </tr>
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">49</td>
+                                                            <td>Company : Favorite</td>
+                                                            <td>Company</td>
+                                                            <td>Favorite marked companies</td>
+                                                        </tr>
+                                                        <tr role="row" class="even">
+                                                            <td class="sorting_1">50</td>
+                                                            <td>Company : Field Count</td>
+                                                            <td>Company</td>
+                                                            <td>Total Important fields attached to company </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><div class="row" style="margin-top: 30px;"><div class="col-sm-5"><div class="dataTables_info" id="tableFilterParamer_info" role="status" aria-live="polite">Showing 1 to 50 of 370 entries</div></div><div class="col-sm-7"><div class="dataTables_paginate paging_simple_numbers" id="tableFilterParamer_paginate"><ul class="pagination"><li class="paginate_button previous disabled" id="tableFilterParamer_previous"><a href="#" aria-controls="tableFilterParamer" data-dt-idx="0" tabindex="0">Previous</a></li><li class="paginate_button active"><a href="#" aria-controls="tableFilterParamer" data-dt-idx="1" tabindex="0">1</a></li><li class="paginate_button "><a href="#" aria-controls="tableFilterParamer" data-dt-idx="2" tabindex="0">2</a></li><li class="paginate_button "><a href="#" aria-controls="tableFilterParamer" data-dt-idx="3" tabindex="0">3</a></li><li class="paginate_button "><a href="#" aria-controls="tableFilterParamer" data-dt-idx="4" tabindex="0">4</a></li><li class="paginate_button "><a href="#" aria-controls="tableFilterParamer" data-dt-idx="5" tabindex="0">5</a></li><li class="paginate_button disabled" id="tableFilterParamer_ellipsis"><a href="#" aria-controls="tableFilterParamer" data-dt-idx="6" tabindex="0">…</a></li><li class="paginate_button "><a href="#" aria-controls="tableFilterParamer" data-dt-idx="7" tabindex="0">8</a></li><li class="paginate_button next" id="tableFilterParamer_next"><a href="#" aria-controls="tableFilterParamer" data-dt-idx="8" tabindex="0">Next</a></li></ul></div></div></div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
