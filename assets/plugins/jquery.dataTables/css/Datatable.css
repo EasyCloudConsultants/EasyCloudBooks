@@ -155,6 +155,7 @@
 
     /*table css*/
 
+
 table.dataTable {
     clear: both;
     margin-top: 6px !important;
@@ -199,7 +200,9 @@ div.dataTables_wrapper div.dataTables_filter label {
     white-space: nowrap;
     text-align: left
 }
-
+.Form-inine {
+    display:block !important;
+}
 div.dataTables_wrapper div.dataTables_filter input {
     margin-left: 0.5em;
     display: inline-block;
