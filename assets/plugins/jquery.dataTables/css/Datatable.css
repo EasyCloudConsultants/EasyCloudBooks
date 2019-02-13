@@ -1,5 +1,7 @@
 /*pagination css*/
-
+#tableFilterParamer_wrapper {
+    display: block !important;
+}
 .pagination {
     display: inline-block;
     padding-left: 0;
