@@ -11,13 +11,13 @@
     margin: 16px auto;
     cursor:default;
     border-radius:5px;
-    background-image:url('../img/ecbLoadingsmall.gif');z-index: 9999 !important;
+    background-image:url('/ecbLoadingsmall.gif');z-index: 9999 !important;
    /* -moz-animation: spinPulse 1s infinite ease-in-out;
     -webkit-animation: spinPulse 1s infinite linear;*/
 }
 .RadAjax_WebBlue .raDiv {
     border-radius:5px;
-    background-image:url('../img/ecbLoadingsmall.gif') !important;
+    background-image:url('/ecbLoadingsmall.gif') !important;
 }
 .circleloading1 {
     background-color: rgba(0,0,0,0);
