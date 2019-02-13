@@ -1,4 +1,8 @@
 /*pagination css*/
+#tableFilterParamer_length
+{
+ display: flex !important;
+}
 #tableFilterParamer_wrapper {
     display: block !important;
 }
