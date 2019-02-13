@@ -200,10 +200,7 @@ div.dataTables_wrapper div.dataTables_filter label {
     white-space: nowrap;
     text-align: left
 }
-#tableFilterParamer_paginate
-{
-    display: contents !important;
-}
+
 div.dataTables_wrapper div.dataTables_filter input {
     margin-left: 0.5em;
     display: inline-block;
