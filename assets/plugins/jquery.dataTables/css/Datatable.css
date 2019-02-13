@@ -202,7 +202,7 @@ div.dataTables_wrapper div.dataTables_filter label {
 }
 #tableFilterParamer_paginate
 {
-    display: contents;
+    display: contents !important;
 }
 div.dataTables_wrapper div.dataTables_filter input {
     margin-left: 0.5em;
