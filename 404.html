@@ -11,8 +11,8 @@ layout: default
 
 <script type="text/Javascript">
   var extrad = 'https://help.easycloudbooks.com/';
-  var url = location.href.toLocalLowerCase();
+  var url = location.href.toLowerCase();
   url = url.replace('https://help.easycloudbooks.com/','').replace('http://help.easycloudbooks.com/','');
-  if(url == 'user/home')
-    location.href= extrad + 'User/Home';
+  if(url.indexOf('user/home') == 0)
+    location.href= extrad + 'User/Home'+ location.href.substr(url.indexOf('user/home')) ;
 </script>
