@@ -8,3 +8,11 @@ layout: default
   <p><strong>Page not found :(</strong></p>
   <p>The requested page could not be found.</p>
 </div>
+
+<script type="text/Javascript">
+  var extrad = 'https://help.easycloudbooks.com/';
+  var url = location.href.toLocalLowerCase();
+  url = url.replace('https://help.easycloudbooks.com/','').replace('http://help.easycloudbooks.com/','');
+  if(url == 'user/home')
+    location.href= extrad + 'User/Home';
+</script>
