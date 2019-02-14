@@ -19,7 +19,7 @@ layout: default
       url = url.replace('https://help.easycloudbooks.com/','').replace('http://help.easycloudbooks.com/','');
       urlo = urlo.replace('https://help.easycloudbooks.com/','').replace('http://help.easycloudbooks.com/','');
       if(url.indexOf('user/home') == 0)
-        newurl= extrad + 'User/Home'+ urlo.substr(url.indexOf('user/home')) ;
+        newurl= extrad + 'User/Home'+ urlo.substr(9);
       if(newurl.indexOf('?')== -1)
       location.href = newurl+'?ir=1';
       else 
