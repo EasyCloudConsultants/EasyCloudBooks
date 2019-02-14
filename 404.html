@@ -10,9 +10,19 @@ layout: default
 </div>
 
 <script type="text/Javascript">
-  var extrad = 'https://help.easycloudbooks.com/';
-  var url = location.href.toLowerCase();
-  url = url.replace('https://help.easycloudbooks.com/','').replace('http://help.easycloudbooks.com/','');
-  if(url.indexOf('user/home') == 0)
-    location.href= extrad + 'User/Home'+ location.href.substr(url.indexOf('user/home')) ;
+    if(location.href.indexOf('ir=1')== -1)
+    {
+      var newurl = '';
+      var extrad = 'https://help.easycloudbooks.com/';
+      var url = location.href.toLowerCase();
+      var urlo = location.href;
+      url = url.replace('https://help.easycloudbooks.com/','').replace('http://help.easycloudbooks.com/','');
+      urlo = urlo.replace('https://help.easycloudbooks.com/','').replace('http://help.easycloudbooks.com/','');
+      if(url.indexOf('user/home') == 0)
+        newurl= extrad + 'User/Home'+ urlo.substr(url.indexOf('user/home')) ;
+      if(newurl.indexOf('?')== -1)
+      location.href = newurl+'?ir=1';
+      else 
+      location.href = newurl+'&ir=1';
+    }
 </script>
