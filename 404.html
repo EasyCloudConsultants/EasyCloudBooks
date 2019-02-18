@@ -67,6 +67,9 @@ layout: default
       
        else if(url.indexOf('user/companyimport') == 0)
         newurl= extrad + 'User/CompanyImport'+ urlo.substr(18);
+
+       else if(url.indexOf('user/documentlog') == 0)
+        newurl= extrad + 'User/DocumentLog'+ urlo.substr(16);
       
        else if(url.indexOf('user/contact') == 0)
         newurl= extrad + 'User/Contact'+ urlo.substr(12);
@@ -82,9 +85,6 @@ layout: default
       
        else if(url.indexOf('user/document') == 0)
         newurl= extrad + 'User/Document'+ urlo.substr(13);
-      
-       else if(url.indexOf('user/documentlog') == 0)
-        newurl= extrad + 'User/DocumentLog'+ urlo.substr(16);
       
        else if(url.indexOf('user/export') == 0)
         newurl= extrad + 'User/Export'+ urlo.substr(11);
@@ -119,18 +119,15 @@ layout: default
        else if(url.indexOf('user/projects') == 0)
         newurl= extrad + 'User/Projects'+ urlo.substr(13);
       
+       else if(url.indexOf('user/querybuilder') == 0)
+        newurl= extrad + 'User/QueryBuilder'+ urlo.substr(17);
+      
        else if(url.indexOf('user/projectscheduler') == 0)
         newurl= extrad + 'User/ProjectScheduler'+ urlo.substr(21);
       
        else if(url.indexOf('user/query') == 0)
         newurl= extrad + 'User/Query'+ urlo.substr(10);
-      
-       else if(url.indexOf('user/querybuilder') == 0)
-        newurl= extrad + 'User/QueryBuilder'+ urlo.substr(17);
-      
-      else if(url.indexOf('user/Querybuilder') == 0)
-        newurl= extrad + 'User/QueryBuilder'+ urlo.substr(17);
-      
+         
        else if(url.indexOf('user/reviewprojects') == 0)
         newurl= extrad + 'User/ReviewProjects'+ urlo.substr(19);
       
