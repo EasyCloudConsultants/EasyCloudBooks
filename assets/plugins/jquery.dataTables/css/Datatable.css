@@ -277,20 +277,20 @@ table.dataTable thead .sorting_desc_disabled:after {
 }
    
 
-table thead tr th.sorting:after {
+.sorting:after {
         opacity: 0.2;
         content: "\e150"
     }
-table thead tr th.sorting_asc:after {
+.sorting_asc:after {
     content: "\e155"
 }
 
-table thead tr th.sorting_desc:after {
+.sorting_desc:after {
     content: "\e156"
 }
 
-table thead tr th.sorting_asc_disabled:after,
-table thead tr th.sorting_desc_disabled:after {
+.sorting_asc_disabled:after,
+.sorting_desc_disabled:after {
     color: #eee
 }
 
