@@ -45,7 +45,7 @@ $(document).ready(function () {
         }
     }
     
-        $("body").css("min-height", screen.height);
+        $("col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content").css("min-height", screen.height);
 });
 
 
