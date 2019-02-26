@@ -45,7 +45,7 @@ $(document).ready(function () {
         }
     }
     
-        $("bd-content").css("min-height", screen.height);
+        $(".bd-content").css("min-height", screen.height);
 });
 
 
