@@ -1,4 +1,15 @@
 $(document).ready(function () {
+    var link = location.pathname.toLowerCase();
+    var part = link.split("#");
+
+    if (part[0] != "")
+    {
+        alert(part[0]);
+
+
+    }
+
+
 
     var url = location.href;
     $('.main-menu li').find('a[href="' + url + '"]').parents('li').addClass('active');
