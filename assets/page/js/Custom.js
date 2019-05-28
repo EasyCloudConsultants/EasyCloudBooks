@@ -1,11 +1,14 @@
 $(document).ready(function () {
     var link = location.pathname.toLowerCase();
     var part = link.split("#");
-
+    alert("a");
     if (part[0] != "")
     {
-        alert(part[0]);
 
+        if (part[0] == "/user/company") {
+
+
+        }
 
     }
 
@@ -60,7 +63,9 @@ $(document).ready(function () {
 });
 
 
-   
+function metatags() {
+    alert("b");
+}
 
 
    
