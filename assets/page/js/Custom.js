@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var description = location.pathname.toLowerCase();
+    var link = location.pathname.toLowerCase();
     var part = link.split("#");
 
     var titel = document.createElement('meta');
