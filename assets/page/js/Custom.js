@@ -23,8 +23,8 @@ $(document).ready(function () {
     }
 
     document.getElementsByTagName('head')[3].appendChild(titel);
-    document.getElementsByTagName('head')[4].appendChild(description);
-    document.getElementsByTagName('head')[5].appendChild(image);
+    //document.getElementsByTagName('head')[4].appendChild(description);
+    //document.getElementsByTagName('head')[5].appendChild(image);
 
     var url = location.href;
     $('.main-menu li').find('a[href="' + url + '"]').parents('li').addClass('active');
