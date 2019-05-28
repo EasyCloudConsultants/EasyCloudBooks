@@ -15,14 +15,14 @@ $(document).ready(function () {
 
         if (part[0] == "/user/company") {
 
-            meta.content = "How to manage on EasyCloudBooks?";
+            titel.content = "How to manage on EasyCloudBooks?";
             description.content = "This module enables you to access all your companies information within seconds. Apart from general information like company’s name, address, industry type, legal structure, it also provides essential details such as pending projects, projects on hold, billed amount, balance pending, custom details pending if unavailable, and its manager/contact person who deals with the matter. It also informs about the relationship manager i.e., any member of your staff whom the projects of that company have been assigned. "
             image.content = "faqimages/company/acompany.png";
         }
 
     }
 
-    document.getElementsByTagName('head')[3].appendChild(meta);
+    document.getElementsByTagName('head')[3].appendChild(titel);
     document.getElementsByTagName('head')[4].appendChild(description);
     document.getElementsByTagName('head')[5].appendChild(image);
 
