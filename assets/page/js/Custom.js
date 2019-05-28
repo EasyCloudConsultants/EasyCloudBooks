@@ -63,9 +63,9 @@ $(document).ready(function () {
 });
 
 
-function metatags() {
+head.ready(document, function () {
     alert("b");
-}
+});
 
 
    
