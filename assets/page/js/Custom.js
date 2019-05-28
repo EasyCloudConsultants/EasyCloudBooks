@@ -1,18 +1,24 @@
 $(document).ready(function () {
-    var link = location.pathname.toLowerCase();
+    var meta = location.pathname.toLowerCase();
     var part = link.split("#");
-    alert("a");
+
+    var meta = document.createElement('meta');
+    meta.setAttribute('name', 'titel');
+  
+
     if (part[0] != "")
     {
 
         if (part[0] == "/user/company") {
 
+            meta.content = "How to manage on EasyCloudBooks?";
+           
 
         }
 
     }
 
-
+    document.getElementsByTagName('head')[3].appendChild(meta);
 
     var url = location.href;
     $('.main-menu li').find('a[href="' + url + '"]').parents('li').addClass('active');
@@ -63,9 +69,6 @@ $(document).ready(function () {
 });
 
 
-head.ready(document, function () {
-    alert("b");
-});
 
 
    
