@@ -9,7 +9,7 @@ $(document).ready(function () {
     var image = document.createElement('meta');
     image.setAttribute('name', 'image');
   
-
+    debugger;
     if (part[0] != "")
     {
 
