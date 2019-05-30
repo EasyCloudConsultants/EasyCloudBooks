@@ -64,7 +64,7 @@ a.txt-white i
         left: 16px;
     }
 
-    .navbarfull {
+    .navbarfull1 {
         width: 18%;
         
     }
@@ -77,7 +77,7 @@ a.txt-white i
     }
 
     @media (max-width:767px) And (min-width:100px) {
-        .navbarfull {
+        .navbarfull1 {
             width: 100% !important;
         }
         span.navbar-toggler-icon i {
