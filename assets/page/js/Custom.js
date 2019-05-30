@@ -7,24 +7,18 @@ $(document).ready(function () {
     var description = "";
     var image = "";
     var Urllink = "";
-   var titleobj = $('meta[property="og:title"]');
+ //  var titleobj = $('meta[property="og:title"]');
     if (part[0] != "")
     {
 
-        if (part[0] == "/user/company") {
-            debugger;
-            titel = 'How to manage on EasyCloudBooks?';
-            description = '<meta property="og:description" content="This module enables you to access all your companies information within seconds. Apart from general information like company’s name, address, industry type, legal structure, it also provides essential details such as pending projects, projects on hold, billed amount, balance pending, custom details pending if unavailable, and its manager/contact person who deals with the matter. It also informs about the relationship manager i.e., any member of your staff whom the projects of that company have been assigned.">';
-            image = '<meta property="og:image" content="faqimages/company/acompany.png">';
-            Urllink = '<meta property="og:url" content="https://help.easycloudbooks.com/user/company">';
-        }
-    console.log(titleobj);
-    console.log(titel);
-    if(titleobj)    $(titleobj).attr('content',titel);
+       
+  //  console.log(titleobj);
+    //console.log(titel);
+   // if(titleobj)    $(titleobj).attr('content',titel);
     }
-    $("head").append(Urllink);
-    $("head").append(image);
-    $("head").append(description);
+   // $("head").append(Urllink);
+   // $("head").append(image);
+   // $("head").append(description);
  
   //  document.getElementsByTagName('head')[3].appendChild(titel);
     //document.getElementsByTagName('head')[4].appendChild(description);
