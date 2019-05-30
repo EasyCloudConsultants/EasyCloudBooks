@@ -2,9 +2,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	
+	<title>{{ site.url | escape }} </title>
 		{%- if site.url == "company"  -%} 
-			{%- include company.html -%}
+			<meta property="og:title" content="How to manage on EasyCloudBooks?">
 		{%- endif -%}
 	   
     <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
