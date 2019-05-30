@@ -61,14 +61,14 @@ $(document).ready(function () {
    
         if (heightadd > navbarHeigh) {
             $('#main-menu').css("min-height", heightadd + "px");
-			$('.navbarfull1').css("min-height", newheight + "px");
-			$('.navbarfull2').css("min-height", newheight + "px");
+			$('.navbarfull1').css("min-height", newheight +  "px");
+			$('.navbarfull2').css("min-height", newheight + 32 +  "px");
 
         }
         if (navbarHeigh > heightadd) {
             $('#main-menu').css("min-height", heightadd + "px");
 			$('.navbarfull1').css("min-height", newheight + "px");
-			$('.navbarfull2').css("min-height", newheight + "px");
+			$('.navbarfull2').css("min-height", newheight + 32 + "px");
             
         }
     }
