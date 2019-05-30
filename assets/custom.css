@@ -4,7 +4,7 @@ body
     overflow-x:hidden;
 }
 
-.colorheader ,#main-menu:before
+.colorheader , #main-menu:before
 {
 	
 background: linear-gradient(to top right,#2490d9,#00d685);
