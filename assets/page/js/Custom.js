@@ -7,7 +7,7 @@ $(document).ready(function () {
     var description = "";
     var image = "";
     var Urllink = "";
-   var titleobj = $('meta[property:"og:title"]');
+   var titleobj = $('meta[property="og:title"]');
     if (part[0] != "")
     {
 
