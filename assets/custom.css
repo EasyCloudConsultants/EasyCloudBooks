@@ -4,7 +4,7 @@ body
     overflow-x:hidden;
 }
 
-.colorheader , #main-menu:before
+.colorheader
 {
 	
 background: linear-gradient(to top right,#2490d9,#00d685);
@@ -14,7 +14,7 @@ background: url(sections.png),linear-gradient(to top right,#2490d9,#00d685);
 background-repeat: repeat;
 }
 
-header , #main-menu:after
+header
 {
 	
 	border-bottom-color: rgba(255,255,255,.35);
@@ -34,8 +34,7 @@ background-color: rgba(0,0,0,.6) !important;
 }
 
 .bg-blue {
-   border-bottom-color: rgba(255,255,255,.35);
-background-color: rgba(0,0,0,.6) !important;
+    background-color: #563d7c;
 }
 
 
