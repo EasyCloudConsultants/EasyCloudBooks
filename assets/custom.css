@@ -3,7 +3,12 @@ body
 
     overflow-x:hidden;
 }
-
+.bd-navbar .navbar-nav .nav-link
+{
+	
+	color:rgba(255,255,255,0.5) !important;
+	
+}
 .colorheader
 {
 	
