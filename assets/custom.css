@@ -71,16 +71,16 @@ a.txt-white i
 	.toggler-right
   {
 	  
-	  display:block;
+	  display:none;
 	  
   }
 }
-@media (max-width:777px) {
+@media (max-width:776px) {
 
   .toggler-right
   {
 	  
-	  display:none;
+	  display:block;
 	  
   }
 }
