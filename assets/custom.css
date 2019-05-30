@@ -14,10 +14,10 @@ background: url(sections.png),linear-gradient(to top right,#2490d9,#00d685);
 background-repeat: repeat;
 }
 
-header, #main-menu
+.coloropen, #main-menu
 {
 	
-	border-bottom-color: rgba(255,255,255,.35);
+border-bottom-color: rgba(255,255,255,.35);
 background-color: rgba(0,0,0,.6) !important;
 	
 }
@@ -68,6 +68,21 @@ a.txt-white i
         width: 18%;
         
     }
+	.toggler-right
+  {
+	  
+	  display:block;
+	  
+  }
+}
+@media (max-width:777px) {
+
+  .toggler-right
+  {
+	  
+	  display:none;
+	  
+  }
 }
 
     .toggler-right {
