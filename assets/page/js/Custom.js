@@ -57,14 +57,15 @@ $(document).ready(function () {
         var navbarHeigh = $('#main-menu').height();
         var wrapperHeigh = $('#collapsibleNavbar').height();
         var heightadd = wrapperHeigh + heightview;
-
-
+   
         if (heightadd > navbarHeigh) {
             $('#main-menu').css("min-height", heightadd + "px");
+			$('.navbarfull1').css("min-height", heightadd + "px");
 
         }
         if (navbarHeigh > heightadd) {
             $('#main-menu').css("min-height", heightadd + "px");
+			$('.navbarfull1').css("min-height", heightadd + "px");
             
         }
     }
