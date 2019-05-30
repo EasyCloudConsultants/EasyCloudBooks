@@ -14,11 +14,11 @@ background: url(sections.png),linear-gradient(to top right,#2490d9,#00d685);
 background-repeat: repeat;
 }
 
-header
+header , #main-menu
 {
 	
 	border-bottom-color: rgba(255,255,255,.35);
-background-color: rgba(0,0,0,.6);
+background-color: rgba(0,0,0,.6) !important;
 	
 }
 /*card scss*/
@@ -34,7 +34,8 @@ background-color: rgba(0,0,0,.6);
 }
 
 .bg-blue {
-    background-color: #563d7c;
+   border-bottom-color: rgba(255,255,255,.35);
+background-color: rgba(0,0,0,.6) !important;
 }
 
 
