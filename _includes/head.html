@@ -2,14 +2,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>{{ site.url | escape }} </title>
-		{%- if site.url == "company"  -%} 
+	<title>{{ site.pages | escape }} </title>
+		{%- if site.pages == "company"  -%} 
 			<meta property="og:title" content="How to manage on EasyCloudBooks?">
 		{%- endif -%}
 	   
     <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="stylesheet" href="{{ "/assets/plugins/jquery.fancybox/css/jquery.fancybox.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/plugins/jquery.fancybox/css/jquery.fancybox.css" | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/plugins/jquery.fancybox/css/jquery.fancybox-buttons.css" | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/custom.css" | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/plugins/jquery.dataTables/css/Datatable.css" | relative_url }}">
