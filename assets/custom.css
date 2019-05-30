@@ -14,7 +14,7 @@ background: url(sections.png),linear-gradient(to top right,#2490d9,#00d685);
 background-repeat: repeat;
 }
 
-.coloropen, #main-menu
+.coloropen, .navbarfull2
 {
 	
 border-bottom-color: rgba(255,255,255,.35);
