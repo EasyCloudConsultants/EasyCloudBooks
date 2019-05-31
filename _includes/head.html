@@ -17,7 +17,25 @@
     <link rel="stylesheet" href="{{ "/assets/plugins/jquery.fancybox/css/jquery.fancybox-buttons.css" | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/custom.css" | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/plugins/jquery.dataTables/css/Datatable.css" | relative_url }}">
-   
+   <style>
+   .colorheader , .navbarfull2:before
+{
+	
+background: linear-gradient(to top right,#2490d9,#00d685);
+background: url(sections.png),linear-gradient(to top right,#2490d9,#00d685);
+background-color: rgba(0, 0, 0, 0);
+    background-repeat: repeat, repeat;
+background-repeat: repeat;
+}
+
+.coloropen, .navbarfull2:after
+{
+	
+border-bottom-color: rgba(255,255,255,.35);
+background-color: rgba(0,0,0,.6) !important;
+	
+}
+   </style>
 	
     {%- feed_meta -%} 
     <script src="{{ "/assets/javascript/bootstrap/jquery.min.js" | relative_url }}"></script>
