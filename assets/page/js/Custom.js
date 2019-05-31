@@ -1,5 +1,5 @@
 $(document).ready(function () {
- if ($(window).width() > 767) {
+ if ($(window).width() < 767) {
 	 	$('.navbarfull2').removeAttr("style");
  }
     var url = location.href;
