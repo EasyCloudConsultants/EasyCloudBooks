@@ -27,11 +27,9 @@ $(document).ready(function () {
         });
 
     }
-	
-    $('.navbarfull2').css("min-height", screen.height + 32 +  "px");
+
+	 var t=0;
 	 
-	 
-	$('.navbarfull2').css("min-height", screen.height + 32 + "px");
     function heightadd() {
         var mainmenu = $('.navbarfull1').height();      
         var navbarHeigh = $('#main-menu').height();
@@ -42,14 +40,22 @@ $(document).ready(function () {
         if (heightadd > navbarHeigh) {
             $('#main-menu').css("min-height", heightadd + "px");
 			//$('.navbarfull1').css("min-height", newheight +  "px");
-			
-
+			if(t !=0)
+			{
+				
+			$('.navbarfull2').css("min-height", newheight + 32 +  "px");
+			}
+			t++;
         }
         if (navbarHeigh > heightadd) {
             $('#main-menu').css("min-height", heightadd + "px");
 			//$('.navbarfull1').css("min-height", mainmenu + "px");
-			
-            
+			if(t !=0)
+			{
+				
+			$('.navbarfull2').css("min-height", newheight + 32 +  "px");
+			}
+		t++;
         }
     }
     
