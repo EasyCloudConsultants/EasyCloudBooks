@@ -1,5 +1,7 @@
 $(document).ready(function () {
-  
+ if ($(window).width() > 767) {
+	 	$('.navbarfull2').removeAttr("style");
+ }
     var url = location.href;
     $('.main-menu li').find('a[href="' + url + '"]').parents('li').addClass('active');
 
@@ -27,6 +29,7 @@ $(document).ready(function () {
         });
 
     }
+
 
 	 var t=0;
 	 
