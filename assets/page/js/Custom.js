@@ -69,7 +69,7 @@ $(document).ready(function () {
 		 
 		 var id = parth.split("#");
 		 
-		   $('#' + id).trigger('click');
+		   $('#' + id[1]).trigger('click');
 		 debugger;
 		 
 		
