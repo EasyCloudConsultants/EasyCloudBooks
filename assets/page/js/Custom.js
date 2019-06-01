@@ -69,7 +69,7 @@ $(document).ready(function () {
 		 
 		
 		 
-		   $(parth).trigger('click');
+		   $(parth).click();
 		 debugger;
 		 
 		
