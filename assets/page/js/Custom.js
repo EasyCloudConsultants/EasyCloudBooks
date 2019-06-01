@@ -64,12 +64,12 @@ $(document).ready(function () {
         $(".bd-content").css("min-height", screen.height);
 		
 		
-	 var parth = location.pathname.toLowerCase();
-	 if(parth.indexOf('#faq') != 0 ){
+	 var parth = location.hash.toLowerCase();
+	 if(parth != "" ){
 		 
-		 var id = parth.split("#");
+		
 		 
-		   $('#' + id[1]).trigger('click');
+		   $(parth).trigger('click');
 		 debugger;
 		 
 		
