@@ -67,9 +67,9 @@ $(document).ready(function () {
 	 var parth = location.hash.toLowerCase();
 	 if(parth != "" ){
 		 
-		
+		var d = parth + 'h';
 		 
-		   $(parth + 'h' +).find(".collapsed").removeClass("collapsed");
+		   $(d).find(".collapsed").removeClass("collapsed");
 		   var id= parth.replace("h","");
 		   $(id).addClass("show");
 		
