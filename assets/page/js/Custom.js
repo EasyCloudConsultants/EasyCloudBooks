@@ -66,7 +66,7 @@ $(document).ready(function () {
 		
 	 var parth = location.hash.toLowerCase();
 	 if(parth != "" ){
-		 
+		 debugger
 		var d = parth + 'h';
 		 
 		   $(d).find(".collapsed").removeClass("collapsed");
