@@ -69,7 +69,9 @@ $(document).ready(function () {
 		 
 		
 		 
-		   $(parth).click();
+		   $(parth).find(".collapsed").removeClass("collapsed");
+		   var id= parth.replace("h","");
+		   $(id).addClass("show");
 		 debugger;
 		 
 		
