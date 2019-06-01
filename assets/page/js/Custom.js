@@ -42,7 +42,6 @@ $(document).ready(function () {
    
         if (heightadd > navbarHeigh) {
             $('#main-menu').css("min-height", heightadd + "px");
-			//$('.navbarfull1').css("min-height", newheight +  "px");
 			if(t !=0)
 			{
 				
@@ -52,7 +51,7 @@ $(document).ready(function () {
         }
         if (navbarHeigh > heightadd) {
             $('#main-menu').css("min-height", heightadd + "px");
-			//$('.navbarfull1').css("min-height", mainmenu + "px");
+		
 			if(t !=0)
 			{
 				
@@ -63,6 +62,22 @@ $(document).ready(function () {
     }
     
         $(".bd-content").css("min-height", screen.height);
+		
+		
+	 var parth = location.pathname.toLowerCase();
+	 if(parth.indexOf('#faq') != 0 ){
+		 
+		 var id = parth.split("#");
+		 
+		   $('#' + id).trigger('click');
+		 debugger;
+		 
+		
+	 }
+	 else
+	 {
+		 debugger;
+	 }
 });
 
 
