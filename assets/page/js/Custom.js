@@ -69,16 +69,15 @@ $(document).ready(function () {
 		 
 		
 		 
-		   $(parth).find(".collapsed").removeClass("collapsed");
+		   $(parth + 'h' +).find(".collapsed").removeClass("collapsed");
 		   var id= parth.replace("h","");
 		   $(id).addClass("show");
-		 debugger;
-		 
+	
 		
 	 }
 	 else
 	 {
-		 debugger;
+		
 	 }
 });
 
