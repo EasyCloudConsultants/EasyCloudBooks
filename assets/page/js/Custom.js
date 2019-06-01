@@ -72,13 +72,9 @@ $(document).ready(function () {
 		   $(parth + 'h' +).find(".collapsed").removeClass("collapsed");
 		   var id= parth.replace("h","");
 		   $(id).addClass("show");
-	
 		
 	 }
-	 else
-	 {
-		
-	 }
+	 
 });
 
 
