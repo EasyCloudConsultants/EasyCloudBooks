@@ -3,6 +3,29 @@ body
 
     overflow-x:hidden;
 }
+.bd-navbar .navbar-nav .nav-link
+{
+	
+	color:rgba(255,255,255,0.5) !important;
+	
+}
+.colorheader
+{
+	
+background: linear-gradient(to top right,#2490d9,#00d685);
+background: url(sections.png),linear-gradient(to top right,#2490d9,#00d685);
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: repeat, repeat;
+background-repeat: repeat;
+}
+
+.coloropen, .navbarfull2
+{
+	
+border-bottom-color: rgba(255,255,255,.35);
+background-color: rgba(0,0,0,.6) !important;
+	
+}
 /*card scss*/
 .card-header:before {
     box-shadow: 0px 15px 10px -15px;
@@ -12,7 +35,7 @@ body
     border-bottom: 2px solid rgba(0,0,0,0.125);
 }
 .breadcrumb-item a {
-    color: #563d7c;
+    color: #0a4f42 ;
 }
 
 .bg-blue {
@@ -46,10 +69,25 @@ a.txt-white i
         left: 16px;
     }
 
-    .navbarfull {
+    .navbarfull1 {
         width: 18%;
         
     }
+	.toggler-right
+  {
+	  
+	  display:none;
+	  
+  }
+}
+@media (max-width:776px) {
+
+  .toggler-right
+  {
+	  
+	  display:block;
+	  
+  }
 }
 
     .toggler-right {
@@ -59,7 +97,7 @@ a.txt-white i
     }
 
     @media (max-width:767px) And (min-width:100px) {
-        .navbarfull {
+        .navbarfull1 {
             width: 100% !important;
         }
         span.navbar-toggler-icon i {
@@ -90,7 +128,7 @@ a.txt-white i
 /*faq-question title color page*/ 
 
 .faq-question {
-    color: #563d7c !important;
+    color: #0a4f42 !important;
 }
 
 /*footer */

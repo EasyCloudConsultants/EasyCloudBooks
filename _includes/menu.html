@@ -3,11 +3,15 @@
     <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
   </button>
 </div>
-  
-<nav id="main-menu"  class="navbar navbar-expand-md bg-blue navbar-dark navbarfull">
+<div class="colorheader navbarfull1" >
+<div class="navbarfull2" style="min-height:900px">
+<nav id="main-menu"  class="navbar navbar-expand-md  navbar-dark navbarfull">
   
   <div class="collapse navbar-collapse nav-position" id="collapsibleNavbar">
       <ul class="navbar-nav linetonav main-menu">
+	    <li class="nav-item inner">
+              <a class="nav-link txt-white" href="{{ "/User/DemoVideo" | absolute_url }}"><i class="fa fa-cogs"></i>Demo Videos</a>
+          </li>
           <li class="nav-item inner">
               <a class="nav-link txt-white" href="{{ "/User/Setup" | absolute_url }}"><i class="fa fa-cogs"></i>Setup Easycloudbooks</a>
           </li>
@@ -57,11 +61,24 @@
                   <li>
                       <a class="nav-link txt-white" href="{{ "/User/ServiceScheduler" | absolute_url }}"><i class="fa fa-clock-o"></i>Service Scheduler</a>
                   </li>
+		      <li>
+                      <a class="nav-link txt-white" href="{{ "/User/Query" | absolute_url }}"><i class="fa fa-question-circle"></i>Query & Discussions</a>
+                  </li>
+                  
+                  
+              </ul>
+          </li>
+	      <li class="nav-item ">
+              <a href="#AccountsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle txt-white nav-link"><i class="fa fa-file-text-o"></i>Accounts</a>
+              <ul class="collapse list-unstyled" id="AccountsSubmenu">
                   <li>
                       <a class="nav-link txt-white" href="{{ "/User/Accounts" | absolute_url }}"><i class="fa fa-exchange"></i>Accounts</a>
                   </li>
                   <li>
                       <a class="nav-link txt-white" href="{{ "/User/PaymentLog" | absolute_url }}"><i class="fa fa-database"></i>Payment Log</a>
+                  </li>
+                  <li>
+                      <a class="nav-link txt-white" href="{{ "/User/Report" | absolute_url }}"><i class="fa fa-table"></i>Report</a>
                   </li>
               </ul>
           </li>
@@ -87,11 +104,9 @@
               <a class="nav-link txt-white" href="{{ "/User/InOutDocuments" | absolute_url }}"><i class="fa fa-newspaper-o"></i>InOut Documents</a>
           </li>
           <li class="nav-item">
-              <a href="#QuerySubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle txt-white nav-link"><i class="fa fa-plus-square"></i>Query</a>
+              <a href="#QuerySubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle txt-white nav-link"><i class="fa fa-plus-square"></i>Automation & Settings</a>
               <ul class="collapse list-unstyled" id="QuerySubmenu">
-                  <li>
-                      <a class="nav-link txt-white" href="{{ "/User/Query" | absolute_url }}"><i class="fa fa-question-circle"></i>Query</a>
-                  </li>
+                  
                   <li>
                       <a class="nav-link txt-white" href="{{ "/User/QueryBuilder" | absolute_url }}"><i class="fa fa-filter"></i>Query Builder</a>
                   </li>
@@ -120,6 +135,9 @@
                   </li>
                   <li>
                       <a class="nav-link txt-white" href="{{ "/User/EmailTemplate" | absolute_url }}"><i class="fa fa-clipboard"></i>Email Templates</a>
+                  </li>
+				    <li>
+                      <a class="nav-link txt-white" href="{{ "/User/Key" | absolute_url }}"><i class="fa fa-clipboard"></i>Key</a>
                   </li>
                   <li>
                       <a class="nav-link txt-white" href="{{ "/User/CreateNotification" | absolute_url }}"><i class="fa fa-plus"></i>Create Notification</a>
@@ -184,6 +202,12 @@
       </ul>
   </div>  
 </nav>
+</div>
+</div>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cecd8cd3b5d3466"></script>
+
+
 
 <!--<div class="d-none d-xl-block col-xl-2 bd-toc">
     <ul class="section-nav">
