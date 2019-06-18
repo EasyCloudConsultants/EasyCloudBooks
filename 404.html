@@ -170,6 +170,9 @@ layout: default
       else if(url.indexOf('user/template') == 0)
         newurl= extrad + 'User/Template'+ urlo.substr(13);
       
+       else if(url.indexOf('user/billing') == 0)
+        newurl= extrad + 'User/Billing'+ urlo.substr(12);
+      
       
       if(newurl.indexOf('?')== -1)
       location.href = newurl+'?ir=1';
