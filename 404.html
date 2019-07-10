@@ -173,6 +173,9 @@ layout: default
        else if(url.indexOf('user/billing') == 0)
         newurl= extrad + 'User/Billing'+ urlo.substr(12);
       
+      else if(url.indexOf('user/market') == 0)
+        newurl= extrad + 'User/Market'+ urlo.substr(11);
+      
       
       if(newurl.indexOf('?')== -1)
       location.href = newurl+'?ir=1';
