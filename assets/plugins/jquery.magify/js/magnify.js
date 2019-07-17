@@ -1,4 +1,11 @@
- $('[data-magnify]').magnify({
+	$(".imgmargin").click(function(){
+
+		$(this).closest('a').attr("data-magnify","gallery").attr("data-caption", $(this).closest('a').attr("title"));
+		$(this).closest('a').removeClass( "fancybox-buttons" )
+	}); 
+ 
+
+$('[data-magnify]').magnify({
     headToolbar: [
       'minimize',
       'maximize',
