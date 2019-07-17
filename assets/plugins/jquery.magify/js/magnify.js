@@ -14,6 +14,6 @@
       'rotateLeft',
       'rotateRight'
     ],
-    modalWidth: 400,
-    modalHeight: 400
+    modalWidth: 500,
+    modalHeight: 500
   });
