@@ -1,7 +1,7 @@
 	$(".imgmargin").click(function(){
-
-		$(this).closest('a').attr("data-magnify","gallery").attr("data-caption", $(this).closest('a').attr("title"));
-		$(this).closest('a').removeClass( "fancybox-buttons" )
+debugger;
+		$(this).parent('a').attr("data-magnify","gallery").attr("data-caption", $(this).parent('a').attr("title"));
+		$(this).parent('a').removeClass( "fancybox-buttons" )
 	}); 
  
 
