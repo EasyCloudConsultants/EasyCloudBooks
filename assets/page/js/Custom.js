@@ -1,4 +1,11 @@
 $(document).ready(function () {
+	$.each($(".imgmargin"),function (e,element)
+	 {       
+       $(element).closest('a').removeAttr("href");	
+	});
+	
+		
+	
  if ($(window).width() < 767) {
 	 	$('.navbarfull2').removeAttr("style");
  }
