@@ -1,7 +1,11 @@
 $(document).ready(function () {
 	$.each($(".imgmargin"),function (e,element)
 	 {       
-       $(element).closest('a').removeAttr("href");	
+		$(element).parent('a').attr("data-magnify","gallery");
+	        $(element).parent('a').attr("data-caption", $(element).parent('a').attr("title"));
+	        $(element).parent('a').attr("href", $(element).attr("src"));
+		$(element).parent('a').removeClass( "fancybox-buttons");
+		
 	});
 	
 		
