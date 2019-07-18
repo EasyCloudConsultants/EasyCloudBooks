@@ -3,6 +3,10 @@ body
 
     overflow-x:hidden;
 }
+.pointer {
+cursor: pointer;
+}
+
 .bd-navbar .navbar-nav .nav-link
 {
 	
