@@ -7,6 +7,10 @@ body
 cursor: pointer;
 }
 
+.padr7{
+	padding-right: 7px;
+}
+
 .bd-navbar .navbar-nav .nav-link
 {
 	
