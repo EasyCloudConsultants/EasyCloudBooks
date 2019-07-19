@@ -675,27 +675,24 @@
 		
 	   
     <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
-    <link rel="stylesheet" href="{{ "/assets/custom.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/plugins/jquery.dataTables/css/Datatable.css" | relative_url }}">
-    
+    <link rel="stylesheet" href="{{ "/assets/custom.css" | relative_url }}">    
     <link rel="stylesheet" href="{{ "/assets/plugins/jquery.magify/css/font-awesome.min.css" | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/plugins/jquery.magify/css/jquery.magnify.css" | relative_url }}">
 	
     {%- feed_meta -%} 
     <script src="{{ "/assets/javascript/bootstrap/jquery.min.js" | relative_url }}"></script>
     <script src="{{ "/assets/javascript/bootstrap/bootstrap.bundle.min.js" | relative_url }}"></script>	
-	
-	 <script src="{{ "/assets/page/js/Common.js" | relative_url }}"></script>
-	
-    <script src="{{ "/assets/page/js/Custom.js" | relative_url }}"></script>
+    {%- if page.url == "/User/CustomFilterList.html"  -%} 
+	<link rel="stylesheet" href="{{ "/assets/plugins/jquery.dataTables/css/Datatable.css" | relative_url }}">
+	<script src="{{ "/assets/page/js/Common.js" | relative_url }}"></script>
 	<script src="{{ "/assets/page/js/CustomFilter.js" | relative_url }}"></script>
-	
 	<script src="{{ "/assets/plugins/jquery.dataTables/js/jquery.dataTables.min.js" | relative_url }}"></script>
 	<script src="{{ "/assets/plugins/jquery.dataTables/js/dataTables.bootstrap.min.js" | relative_url }}"></script>	
-	<script src="{{ "/assets/plugins/jquery.magify/js/jquery.magnify.js" | relative_url }}"></script>
-	 <script src="{{ "/assets/plugins/jquery.magify/js/magnify.js" | relative_url }}"></script>
+{%- endif -%}	
+	
+    <script src="{{ "/assets/page/js/Custom.js" | relative_url }}"></script>
+    <script src="{{ "/assets/plugins/jquery.magify/js/jquery.magnify.js" | relative_url }}"></script> 
+    <script src="{{ "/assets/plugins/jquery.magify/js/magnify.js" | relative_url }}"></script>
 	 
 	 
 <script type="application/ld+json">
@@ -797,9 +794,4 @@
 
   	gtag('config', 'UA-143357217-1');
 	</script>
-
-		
-    <!--<script src="{{ "/assets/javascript/fancy_box/jquery.fancybox.js" | relative_url }}"></script>
-    <script src="{{ "/assets/javascript/fancy_box/jquery.fancybox-buttons.js" | relative_url }}"></script>
-    <script src="{{ "/assets/javascript/fancy_box/jquery.fancybox-media.js" | relative_url }}"></script>-->
 </head>
