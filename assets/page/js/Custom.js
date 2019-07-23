@@ -1,4 +1,8 @@
 $(document).ready(function () {
+	
+	$('.entry-hide).hide();
+	
+	
 	$.each($(".imgmargin"),function (e,element)
 	 {       
 		$(element).parent('a').attr("data-magnify","gallery");
