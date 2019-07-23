@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	
-	$('.entry-hide).hide();
+	$(".entry-hide").hide();
 	
 	
 	$.each($(".imgmargin"),function (e,element)
