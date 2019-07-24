@@ -7,7 +7,7 @@ $(document).ready(function () {
 	 {       
 		$(element).parent('a').attr("data-magnify","gallery");
 	        $(element).parent('a').attr("data-caption", $(element).parent('a').attr("title"));
-	        $(element).parent('a').attr("href", $(element).attr("src"));
+	        $(element).parent('a').attr("href", $(element).attr("src").replace("thumb/", ''));
 		$(element).parent('a').removeClass( "fancybox-buttons");
 		
 	});
