@@ -19,9 +19,13 @@ layout: default
       url = url.replace('https://help.easycloudbooks.com/','').replace('http://help.easycloudbooks.com/','');
       urlo = urlo.replace('https://help.easycloudbooks.com/','').replace('http://help.easycloudbooks.com/','');
      
+
      
       if(url.indexOf('user/home') == 0)
         newurl= extrad + 'User/Home'+ urlo.substr(9);
+	    
+	    else if(url.indexOf('user/automationevent') == 0)
+        newurl= extrad + 'User/AutomationEvent'+ urlo.substr(20);
      
       else if(url.indexOf('user/dashboard-home') == 0)
         newurl= extrad + 'User/Home'+ urlo.substr(19);
@@ -170,11 +174,8 @@ layout: default
       else if(url.indexOf('user/template') == 0)
         newurl= extrad + 'User/Template'+ urlo.substr(13);
      
-     else if(url.indexOf('user/automationevent') == 0)
-        newurl= extrad + 'User/AutomationEvent'+ urlo.substr(20);
-	 
- 	else if(url.indexOf('user/Automationevent') == 0)
-        newurl= extrad + 'User/AutomationEvent'+ urlo.substr(20);	    
+
+	
 	    
       if(newurl.indexOf('?')== -1)
       location.href = newurl+'?ir=1';
