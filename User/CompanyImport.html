@@ -64,7 +64,7 @@ layout: default
                 <div class="card mb-2">
                     <div class="card-header" id="faq4h">
                         <h5 class="mb-0">
-                            <a data-toggle="collapse" href="#faq4" class="faq-question">Rules and Situations for Company import with contacts</a>
+                            <a data-toggle="collapse" href="#faq4" class="faq-question">Rules and Situations for Company import with Contacts</a>
                         </h5>
                     </div>
                     <div id="faq4" class="collapse" aria-labelledby="faq4" data-parent="#accordion">
@@ -72,7 +72,7 @@ layout: default
                             <div class="row">
                                 <div class="col-lg-12">
                                     <p class="p-size">
-                                        EasyCloudBooks provides 3 types for Import functionalities.<br>
+                                        <strong>EasyCloudBooks provides 3 types for Import functionalities.</strong><br>
 <strong>1. Company Import</strong>- which can be used for Creation of Companies only.<br>
 <strong>2. Contact Import</strong>- which can be used for creation of contacts only.<br>
 <strong>3. Combine Import</strong>- It will create Contact and Company with Linking.<br>
@@ -87,7 +87,7 @@ There can be two situations while Importing Contacts and Company.<br>
 Scene 1: If you import companies without PAN, <br>
 , and same name doesn’t exists then EasyCloudBooks will create company.<br>
 , and same name exists then easycloudbooks will update the record.<br>
-So, EasyCloudBooks prefers to Import Companies with PAN and Contacts with Mobile No.<br>
+So, EasyCloudBooks prefers to Import Companies with 'PAN' and Contacts with 'Mobile No'.<br>
 
 <strong>2. Now, If you Import company with PAN then there are 4 possibilities</strong><br>
 	1. Any PAN Doesn’t Exists <br>
@@ -95,19 +95,19 @@ So, EasyCloudBooks prefers to Import Companies with PAN and Contacts with Mobile
 	3. Same PAN Exist more than one<br>
 	4. Other PAN Exist<br>
 
-Scene 1: If any PAN Doesn’t Exists<br>
+<strong>Scene 1: If any PAN Doesn’t Exists</strong><br>
 , And same Name exists then easycloudbooks will Update Name and other fields.<br>
 , And same name doesn’t exists in the system then EasyCloudBooks will create New Company.<br>
 , And same name exists more than once then easycloudbooks will ignore that record.<br>
 
-Scene 2: If same PAN exists<br>
+<strong>Scene 2: If same PAN exists</strong><br>
 , and same name exists then easycloudbooks will update those details in database.<br>
 , and the company name is different then easycloudbooks will update name and other details.<br>
 , and same name exists more than once then easycloudbooks will Ignore that record.<br>
 
-Scene 3: If same PAN exists more than once then easycloudbooks will not update the record but if it is possible then will do the linking.<br>
+<strong>Scene 3: If same PAN exists more than once then easycloudbooks will not update the record but if it is possible then will do the linking.</strong><br>
 
-Scene 4: If any other Pan Exists.<br>
+<strong>Scene 4: If any other Pan Exists.</strong><br>
 , and same name exists then easycloudbooks will create new Company.<br>
 , and same name doesn’t exists then easycloudbooks will create new company.<br>
 , and same name exists more than once then easycloudbooks will ignore that record.<br>
