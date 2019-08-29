@@ -56,11 +56,61 @@ layout: default
                         </div>
                     </div>
                 </div>
+		    
+		    <div class="card mb-2">
+                    <div class="card-header" id="faq6h">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#faq6" class="faq-question">Instruction and Rules for combine import of Companies !</a>
+                        </h5>
+                    </div>
+                    <div id="faq6" class="collapse" aria-labelledby="faq6" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p class="p-size">
+                                       If you want to add/update multiple contacts only then you can use contact.xlsx. </p>
+					<div class="col-lg-12">
+                                    <a class="fancybox-buttons" href="faqimages/company/contact import.png" title="Import Companies with Contacts">
+                                        <img class="img-responsive imgmargin" src="faqimages/company/thumb/contact import.png" alt="Import Companies with Contacts">
+                                    </a>
+						
+						<p class="p-size">
+                                       And if you want to add/update multiple Companies then for that use Company.xlsx.</p>
+					<div class="col-lg-12">
+                                    <a class="fancybox-buttons" href="faqimages/company/company import.png" title="Import Companies with Contacts">
+                                        <img class="img-responsive imgmargin" src="faqimages/company/thumb/company import.png" alt="Import Companies with Contacts">
+                                    </a>
+						
+					<p class="p-size">
+                                       And if you want to add contact and company and also want that contact should be linked with company or vice versa then use Combine.xlsx.</p>
+					<div class="col-lg-12">
+                                    <a class="fancybox-buttons" href="faqimages/company/combine import.png" title="Import Companies with Contacts">
+                                        <img class="img-responsive imgmargin" src="faqimages/company/thumb/combine import.png" alt="Import Companies with Contacts">
+                                    </a>
+						<p class="p-size">
+							So, If you are willing to Import Contact and Company with linking then Open Combine.xlsx sheet. Now to Import Companies, there are two fields that plays key role. 1st is Company Name and PAN. And same for the Contact Important fields are Contact Name and Mobile No.
+
+If you have left Company name field blank then ECB will ignore other fields of the company and will check for Contact's field in same row and  will do add or update operation on contact.
+
+And as If you have filled Company name and other fields of the company and had left Contact name blank then ECB is going to ignore the Contact and will do add or update operation on company.
+
+Now while importing a sheet, If ECB finds Company name that already exists there in the database then PAN will play an important role in such situation for identification of correct company. So, we recommend to have unique PAN in front of every Company. And same role plays Mobile No for the Contacts.
+
+EX:- Now, If you have that question that, what if I have two different clients with exact same name then will ECB allow me to Import both the clients or not?? The answer is YES, It is possible that two clients might have same name, but their PAN or Mobile No has to be different.
+So, two Contacts or two Companies can have same name but there mobile and PAN will be different. And on that basis, If ECB finds same PAN or Mobile No. exists then it will update the existing record with new record.  And if, there are more than 1 duplicate PANs or Mobile Numbers exists then ECB will ignore that record.
+                 </p>
+                                </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
                 <div class="card mb-2">
                     <div class="card-header" id="faq2h">
                         <h5 class="mb-0">
-                            <a data-toggle="collapse" href="#faq2" class="faq-question">Rules and Situations for Company import with Contacts</a>
+                            <a data-toggle="collapse" href="#faq2" class="faq-question">Rules and Situations for Company import with Contacts !</a>
                         </h5>
                     </div>
                     <div id="faq2" class="collapse" aria-labelledby="faq2" data-parent="#accordion">
