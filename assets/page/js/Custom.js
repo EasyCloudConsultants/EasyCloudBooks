@@ -88,12 +88,12 @@ console.log("first");
 		
 	 }
 	else
-	{  
+	{  debugger;
 		console.log("secode");
 		parth= parth+"h";
-	    $(parth).find(".collapsed").removeClass("collapsed");
+	    $(#+''+parth).find(".collapsed").removeClass("collapsed");
 		   var id= parth.replace("h","");
-		   $(id).addClass("show");
+		   $(#+''+id).addClass("show");
 	}
 	 
 });
