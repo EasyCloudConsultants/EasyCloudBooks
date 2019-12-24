@@ -93,7 +93,7 @@ console.log("first");
 		parth= parth+"h";
 	    $(parth).find(".collapsed").removeClass("collapsed");
 		   var id= parth.replace("h","");
-		   $(id).addClass("show");
+		   $(id).attr("class","collapse show");
 	}
 	 
 });
