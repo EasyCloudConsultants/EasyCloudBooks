@@ -91,7 +91,7 @@ console.log("first");
 	{  debugger;
 		console.log("secode");
 		parth= parth+"h";
-	    $(parth).find("h5").find("a").click();
+	    $(parth).find("h5 .faq-question").click();
 	}
 	 
 });
