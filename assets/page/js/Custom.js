@@ -81,7 +81,7 @@ $(document).ready(function () {
 		
 	 var parth = location.hash.toLowerCase();
 	 if(parth != "" &&  parth.indexOf('settings')>-1){
-
+console.log("first");
 		   $(parth).find(".collapsed").removeClass("collapsed");
 		   var id= parth.replace("h","");
 		   $(id).addClass("show");
@@ -89,6 +89,7 @@ $(document).ready(function () {
 	 }
 	else
 	{  
+		console.log("secode");
 		parth= parth+"h";
 	    $(parth).find(".collapsed").removeClass("collapsed");
 		   var id= parth.replace("h","");
