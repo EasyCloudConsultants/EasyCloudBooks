@@ -80,13 +80,20 @@ $(document).ready(function () {
 		
 		
 	 var parth = location.hash.toLowerCase();
-	 if(parth != "" ){
+	 if(parth != "" &&  parth.indexOf('settings')>-1){
 
 		   $(parth).find(".collapsed").removeClass("collapsed");
 		   var id= parth.replace("h","");
 		   $(id).addClass("show");
 		
 	 }
+	else
+	{  
+		parth= parth+"h";
+	    $(parth).find(".collapsed").removeClass("collapsed");
+		   var id= parth.replace("h","");
+		   $(id).addClass("show");
+	}
 	 
 });
 
