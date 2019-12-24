@@ -91,9 +91,7 @@ console.log("first");
 	{  debugger;
 		console.log("secode");
 		parth= parth+"h";
-	    $(parth).find(".collapsed").removeClass("collapsed");
-		   var id= parth.replace("h","");
-		   $(id).attr("class","collapse show");
+	    $(parth).find("h5").find("a").click();
 	}
 	 
 });
