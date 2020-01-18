@@ -1,8 +1,8 @@
 ---
 name: Testing Required
 about: Testing Required due to Module Change or Other Module Error/Changes
-title: ''
-labels: ''
+title: 'testing-'
+labels: 'testing-required'
 assignees: ''
 
 ---
