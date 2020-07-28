@@ -183,7 +183,11 @@ layout: default
 	    else if(url.indexOf('user/worktask') == 0)
         newurl= extrad + 'User/WorkTask'+ urlo.substr(25);
      
-
+ else if(url.indexOf('deal') == 0)
+        newurl= extrad + 'deal'+ urlo.substr(25);
+	
+	     else if(url.indexOf('expcon-deal') == 0)
+        newurl= extrad + 'expcon-deal'+ urlo.substr(25);
 	
 	    
       if(newurl.indexOf('?')== -1)
