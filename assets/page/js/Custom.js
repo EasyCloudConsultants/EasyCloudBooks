@@ -88,7 +88,7 @@ console.log("first");
 		
 	 }
 	else
-	{  debugger;
+	{  
 		console.log("secode");
 		parth= parth+"h";
 	    $(parth).find("h5 .faq-question").click();
