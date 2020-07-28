@@ -187,7 +187,9 @@ layout: default
         newurl= extrad + 'deal'+ urlo.substr(25);
 	
 	     else if(url.indexOf('expcon-deal') == 0)
-        newurl= extrad + 'expcon-deal'+ urlo.substr(25);
+        newurl= extrad + 'expcon-deal'+ urlo.substr(25);  
+	    else if(url.indexOf('redirect') == 0)
+        newurl= "https://www.easycloudbooks.in"+ urlo.substr(25);
 	
 	    
       if(newurl.indexOf('?')== -1)
