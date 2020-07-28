@@ -10,14 +10,24 @@ layout: default
 </div>
 
 <script type="text/Javascript">
-    if(location.href.indexOf('ir=1')== -1)
-    {
-      var newurl = '';
+	var newurl = '';
       var extrad = 'https://help.easycloudbooks.com/';
       var url = location.href.toLowerCase();
       var urlo = location.href;
       url = url.replace('https://help.easycloudbooks.com/','').replace('http://help.easycloudbooks.com/','');
       urlo = urlo.replace('https://help.easycloudbooks.com/','').replace('http://help.easycloudbooks.com/','');
+	
+	 if(url.indexOf('expcon-deal') == 0)
+        newurl= extrad + 'expcon-deal'+ urlo.substr(25);  
+	  else if(url.indexOf('redirect-expcon') == 0){
+		    top.location= "https://www.expcon.in"+ urlo.substr(25);
+	    }  else if(url.indexOf('redirect') == 0){
+		    top.location= "https://www.easycloudbooks.in"+ urlo.substr(25);
+	    }
+	else{
+    if(location.href.indexOf('ir=1')== -1)
+    {
+      
      
 
      
@@ -186,18 +196,12 @@ layout: default
  else if(url.indexOf('deal') == 0)
         newurl= extrad + 'deal'+ urlo.substr(25);
 	
-	     else if(url.indexOf('expcon-deal') == 0)
-        newurl= extrad + 'expcon-deal'+ urlo.substr(25);  
-	  else if(url.indexOf('redirect-expcon') == 0){
-		    top.location= "https://www.expcon.in"+ urlo.substr(25);
-	    }  else if(url.indexOf('redirect') == 0){
-		    top.location.href= "https://www.easycloudbooks.in"+ urlo.substr(25);
-	    }
+	     
 	
 	    
       if(newurl.indexOf('?')== -1)
       location.href = newurl+'?ir=1';
       else
       location.href = newurl+'&ir=1';
-    }
+    }}
 </script>
