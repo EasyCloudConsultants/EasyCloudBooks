@@ -38,7 +38,6 @@
     <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ "/assets/custom.css" | relative_url }}">     
-    <link rel="stylesheet" href="{{ "/assets/plugins/jquery.dataTables/css/Datatable.css" | relative_url }}">
     <!--<link rel="stylesheet" href="{{ "/assets/plugins/jquery.magify/css/font-awesome.min.css" | relative_url }}">-->
     <link rel="stylesheet" href="{{ "/assets/plugins/jquery.magify/css/jquery.magnify.css" | relative_url }}">
 	
@@ -61,8 +60,6 @@
 	<meta name="keywords" content="" />	 
 {%- endif -%}
 
-    <script src="{{ "/assets/plugins/jquery.magify/js/jquery.magnify.js" | relative_url }}"></script> 
-    <script src="{{ "/assets/plugins/jquery.magify/js/magnify.js" | relative_url }}"></script>
 	 
 	 
 <script type="application/ld+json">
